@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.datum - SRS Ontology - Datum module
-Generated 2026-10-07T16:40:06.729462+00:00
+Generated 2026-10-07T16:42:22.126975+00:00
 === General ===
 
 ** Validation error **
@@ -19,12 +19,12 @@ Validation result for _sources/datum/rules.shacl:
   
 Focus nodes for _sources/datum/rules.shacl:
  - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
  - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
  - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
 
 === End SHACL ===
 
