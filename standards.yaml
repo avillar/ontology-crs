@@ -1,0 +1,59 @@
+standards:
+
+  - id: crs-ontology
+    prefix: ogc.geosrs.
+    title: "OGC/W3C CRS Ontology Specification"
+    type: Standard
+    status: Draft
+    version: "0.1"
+    base-uri: https://opengeospatial.github.io/ontology-crs
+
+    # Requirement and conformance class URIs have always been of the form
+    # <base-uri>/req/<module>/<requirement> (see "requirementClasses" in the
+    # module blocks), with no draft/ segment.
+    req-uri-template: "{base-uri}/req/{id}"
+    conf-uri-template: "{base-uri}/conf/{id}"
+
+    editors:
+      - name: Luís Moreira de Sousa
+        affiliation: OSGeo Foundation; Instituto Superior Técnico, University of Lisbon
+      - name: Timo Homburg
+        affiliation: Mainz University Of Applied Sciences
+      - name: Nathalie Abadie
+        affiliation: IGN France
+      - name: Ghislain Atemezing
+        affiliation: European Union Agency for Railways (ERA)
+
+    wg: GeoSemantics DWG
+    keywords:
+      - CRS
+      - coordinate reference system
+      - ontology
+      - RDF
+
+    abstract: |
+      The Spatial Reference Systems (SRS) web ontology results from a joint effort between the
+      Spatio-temporal Data on the Web Working Group (SDWWG) of the W3C and the GeoSemantics DWG of
+      the OGC. It is meant to provide a workable Semantic Web counterpart to the ISO 19111 domain
+      model, allowing for the full expression of reference systems with RDF. The ultimate goal is
+      to attain a web ontology for coordinate reference systems (CRS), approved both by the OGC and
+      the W3C.
+
+    clauses:
+      - ogc.geosrs.requirements.scope
+      - {auto: conformance}
+      - ogc.geosrs.requirements.references
+      - ogc.geosrs.requirements.terms
+      - ogc.geosrs.requirements.conventions
+      - ogc.geosrs.srs
+      - ogc.geosrs.co
+      - ogc.geosrs.cs
+      - ogc.geosrs.datum
+      - ogc.geosrs.app
+      - ogc.geosrs.projection
+      - ogc.geosrs.planet
+      - ogc.geosrs.requirements.instances
+      - {auto: annex-a}
+      - ogc.geosrs.requirements.alignments
+      - ogc.geosrs.requirements.shacl-shapes
+      - ogc.geosrs.requirements.jsonld-context

@@ -1,0 +1,30 @@
+class-id: instances
+requirements:
+- id: instances/Coordinate_System_Axis
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS instances `geosrs:Down`, `geosrs:East`, `geosrs:GeocentricX`,
+    `geosrs:GeocentricY`, `geosrs:GeocentricZ`, `geosrs:North`, `geosrs:South`, `geosrs:Up` and `geosrs:West`
+    to be used in SPARQL graph patterns.
+- id: instances/Prime_Meridians
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS instances `geosrs:AthensPrimeMeridian`, `geosrs:BernPrimeMeridian`,
+    `geosrs:BogotaPrimeMeridian`, `geosrs:BrusselsPrimeMeridian`, `geosrs:FerroPrimeMeridian`, `geosrs:GreenwichPrimeMeridian`,
+    `geosrs:JakartaPrimeMeridian`, `geosrs:LisbonPrimeMeridian`, `geosrs:MadridPrimeMeridian`, `geosrs:OsloPrimeMeridian`,
+    `geosrs:ParisPrimeMeridian`, `geosrs:ParisRGSPrimeMeridian`, `geosrs:RomePrimeMeridian` and `geosrs:StockholmPrimeMeridian`
+    to be used in SPARQL graph patterns.
+- id: instances/SRS_Literal_Types
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS instances `geosrs:proj4Literal`, `geosrs:projJSONLiteral` and
+    `geosrs:wktLiteral` to be used in SPARQL graph patterns.
+- id: instances/Spheroids
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS instances `geosrs:Airy1830`, `geosrs:AiryModified1849`, `geosrs:AustralianNationalSpheroid`,
+    `geosrs:CGCS2000`, `geosrs:Clarke1858`, `geosrs:Clarke1866`, `geosrs:Clarke1880`, `geosrs:Clarke1880ARC`,
+    `geosrs:Clarke1880IGN`, `geosrs:Danish1876`, `geosrs:Everest1930`, `geosrs:GRS1980`, `geosrs:GRS67`,
+    `geosrs:GSK-2011`, `geosrs:Helmert1906`, `geosrs:IAG1975`, `geosrs:International1924`, `geosrs:Krassowsky1940`,
+    `geosrs:PZ90`, `geosrs:Plessis1817`, `geosrs:Struve1860`, `geosrs:WGS66`, `geosrs:WGS72`, `geosrs:WGS84`
+    and `geosrs:Zach1812` to be used in SPARQL graph patterns.

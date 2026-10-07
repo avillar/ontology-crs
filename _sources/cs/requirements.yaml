@@ -1,0 +1,63 @@
+requirements:
+- id: cs/3D_Coordinate_Systems
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:ConicalCoordinateSystem`, `geosrs:CylindricalCoordinateSystem`,
+    `geosrs:EllipsoidalCoordinateSystem` and `geosrs:SphericalCoordinateSystem` to be used in SPARQL graph
+    patterns.
+  applies-to:
+    bblock: ogc.geosrs.cs
+    terms: [ConicalCoordinateSystem, CylindricalCoordinateSystem, EllipsoidalCoordinateSystem, SphericalCoordinateSystem]
+- id: cs/Celestial_Coordinate_Systems
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:CelestialCoordinateSystem`, `geosrs:EclipticCoordinateSystem`,
+    `geosrs:EquatorialCoordinateSystem`, `geosrs:GalacticCoordinateSystem`, `geosrs:HorizontalCoordinateSystem`,
+    `geosrs:PerifocalCoordinateSystem` and `geosrs:SuperGalacticCS` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.cs
+    terms: [CelestialCoordinateSystem, EclipticCoordinateSystem, EquatorialCoordinateSystem, GalacticCoordinateSystem,
+      HorizontalCoordinateSystem, PerifocalCoordinateSystem, SuperGalacticCS]
+- id: cs/Coordinate_System_Components
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:CoordinateSystemAxis` to be used in SPARQL graph
+    patterns.
+  applies-to:
+    bblock: ogc.geosrs.cs
+    terms: [CoordinateSystemAxis]
+- id: cs/Coordinate_System_Properties
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS properties `geosrs:axis` and `geosrs:axisDirection` to be used
+    in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.cs
+    terms: [axis, axisDirection]
+- id: cs/Coordinate_System_Types
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AffineCoordinateSystem`, `geosrs:BarycentricCoordinateSystem`,
+    `geosrs:CartesianCoordinateSystem`, `geosrs:CoordinateSystem`, `geosrs:CurvilinearCoordinateSystem`,
+    `geosrs:EngineeringCoordinateSystem`, `geosrs:GeodeticCoordinateSystem`, `geosrs:GeographicalCoordinateSystem`,
+    `geosrs:GridCoordinateSystem`, `geosrs:HexagonalCoordinateSystem`, `geosrs:LinearCoordinateSystem`,
+    `geosrs:LocalCoordinateSystem`, `geosrs:ObliqueCoordinateSystem`, `geosrs:OrdinalCoordinateSystem`,
+    `geosrs:OrthogonalCoordinateSystem`, `geosrs:ParametricCoordinateSystem`, `geosrs:PlanarCoordinateSystem`,
+    `geosrs:PolarCoordinateSystem` and `geosrs:VerticalCoordinateSystem` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.cs
+    terms: [AffineCoordinateSystem, BarycentricCoordinateSystem, CartesianCoordinateSystem, CoordinateSystem,
+      CurvilinearCoordinateSystem, EngineeringCoordinateSystem, GeodeticCoordinateSystem, GeographicalCoordinateSystem,
+      GridCoordinateSystem, HexagonalCoordinateSystem, LinearCoordinateSystem, LocalCoordinateSystem,
+      ObliqueCoordinateSystem, OrdinalCoordinateSystem, OrthogonalCoordinateSystem, ParametricCoordinateSystem,
+      PlanarCoordinateSystem, PolarCoordinateSystem, VerticalCoordinateSystem]
+- id: cs/Temporal_Coordinate_Systems
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:DateTimeTemporalCoordinateSystem`, `geosrs:TemporalCoordinateSystem`,
+    `geosrs:TemporalCountCoordinateSystem` and `geosrs:TemporalMeasureCoordinateSystem` to be used in
+    SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.cs
+    terms: [DateTimeTemporalCoordinateSystem, TemporalCoordinateSystem, TemporalCountCoordinateSystem,
+      TemporalMeasureCoordinateSystem]

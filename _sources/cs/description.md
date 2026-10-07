@@ -6,5 +6,4 @@ Coordinate system classes and properties are described under the namespace https
 
 ![SRS Ontology Coordinate System Module](assets/cs.png)
 
-
-
+The coordinate system module introduces different types of coordinate systems which are distinguished in geospatial science and applications. Coordinate systems are distinguished by their area of use, i.e. planetary or interstellar, and by their dimensionality.

@@ -1,0 +1,43 @@
+requirements:
+- id: datum/Datum_Parameters
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:DefiningParameter` and `geosrs:PrimeMeridian`
+    to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.datum
+    terms: [DefiningParameter, PrimeMeridian]
+- id: datum/Datum_Properties
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS properties `geosrs:datumDefiningParameter`, `geosrs:ellipsoid`
+    and `geosrs:primeMeridian` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.datum
+    terms: [datumDefiningParameter, ellipsoid, primeMeridian]
+- id: datum/Datum_Types
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:Datum`, `geosrs:DatumEnsemble`, `geosrs:DynamicGeodeticReferenceFrame`,
+    `geosrs:DynamicVerticalDatum`, `geosrs:EngineeringDatum`, `geosrs:GeodeticDatum`, `geosrs:ParametricDatum`,
+    `geosrs:TemporalDatum` and `geosrs:VerticalDatum` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.datum
+    terms: [Datum, DatumEnsemble, DynamicGeodeticReferenceFrame, DynamicVerticalDatum, EngineeringDatum,
+      GeodeticDatum, ParametricDatum, TemporalDatum, VerticalDatum]
+- id: datum/Spheroid_Properties
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS properties `geosrs:eccentricity`, `geosrs:inverseFlattening`,
+    `geosrs:isSphere`, `geosrs:semiMajorAxis` and `geosrs:semiMinorAxis` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.datum
+    terms: [eccentricity, inverseFlattening, isSphere, semiMajorAxis, semiMinorAxis]
+- id: datum/Spheroid_Types
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:Ellipsoid` and `geosrs:TriaxialEllipsoid` to
+    be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.datum
+    terms: [Ellipsoid, TriaxialEllipsoid]

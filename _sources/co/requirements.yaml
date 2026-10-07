@@ -1,0 +1,39 @@
+requirements:
+- id: co/Coordinate_Operation_Categories
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AffineOperation`, `geosrs:GeographicObject`,
+    `geosrs:IdentityOperation`, `geosrs:RegisterOperations`, `geosrs:RotationOperation`, `geosrs:ScaleOperation`,
+    `geosrs:ShearOperation` and `geosrs:TranslationOperation` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.co
+    terms: [AffineOperation, GeographicObject, IdentityOperation, RegisterOperations, RotationOperation,
+      ScaleOperation, ShearOperation, TranslationOperation]
+- id: co/Coordinate_Operation_Methods
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:ConcatenatedOperation`, `geosrs:Conversion`,
+    `geosrs:CoordinateOperation`, `geosrs:OperationMethod`, `geosrs:PassThroughOperation`, `geosrs:PointMotionOperation`,
+    `geosrs:SingleOperation` and `geosrs:Transformation` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.co
+    terms: [ConcatenatedOperation, Conversion, CoordinateOperation, OperationMethod, PassThroughOperation,
+      PointMotionOperation, SingleOperation, Transformation]
+- id: co/Coordinate_Operation_Parameters
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:GeneralOperationParameter`, `geosrs:GeneralParameterValue`,
+    `geosrs:OperationParameter`, `geosrs:OperationParameterGroup`, `geosrs:OperationParameterValue` and
+    `geosrs:ParameterValueGroup` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.co
+    terms: [GeneralOperationParameter, GeneralParameterValue, OperationParameter, OperationParameterGroup,
+      OperationParameterValue, ParameterValueGroup]
+- id: co/Coordinate_Operation_Properties
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS properties `geosrs:derivingConversion`, `geosrs:parameter`, `geosrs:sourceCRS`
+    and `geosrs:targetCRS` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.co
+    terms: [derivingConversion, parameter, sourceCRS, targetCRS]

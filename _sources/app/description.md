@@ -4,4 +4,4 @@ This module describes how to model an SRS application entity using the SRS ontol
 
 SRS Application classes and properties are described under the namespace https://w3id.org/geosrs/application/
 
-![SRS Ontology Application Module](assets/application.png)
+![SRS Ontology Application Module](assets/application.svg)

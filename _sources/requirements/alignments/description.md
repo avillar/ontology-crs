@@ -1,0 +1,12 @@
+The prefixes used for the ontologies mapped to in the alignments are given in the following table.
+
+| Prefix | Namespace |
+|---|---|
+| `ign:` | `http://data.ign.fr/def/ignf#` |
+| `iso19111:` | `http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#` |
+| `geosrs:` | `http://www.opengis.net/ont/geosparql#` |
+| `ifc:` | `https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/` |
+| `owl:` | `http://www.w3.org/2002/07/owl#` |
+| `prov:` | `http://www.w3.org/ns/prov#` |
+| `rdf:` | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` |
+| `rdfs:` | `http://www.w3.org/2000/01/rdf-schema#` |

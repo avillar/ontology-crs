@@ -1,0 +1,33 @@
+class-id: core
+requirements:
+- id: core/Coordinate_Reference_System_Parameters
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AreaOfUse`, `geosrs:AxesList`, `geosrs:Extent`,
+    `geosrs:GeographicBoundingBox` and `geosrs:SingleCRSList` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.srs
+    terms: [AreaOfUse, AxesList, Extent, GeographicBoundingBox, SingleCRSList]
+- id: core/Coordinate_Reference_System_Properties
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS properties `geosrs:EPSGcode`, `geosrs:asProj4`, `geosrs:asProjJSON`,
+    `geosrs:asWKT`, `geosrs:baseCRS`, `geosrs:conversion`, `geosrs:coordinateSystem`, `geosrs:datum`,
+    `geosrs:datumEnsemble`, `geosrs:domainOfValidity` and `geosrs:method` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.srs
+    terms: [EPSGcode, asProj4, asProjJSON, asWKT, baseCRS, conversion, coordinateSystem, datum, datumEnsemble,
+      domainOfValidity, method]
+- id: core/Coordinate_Reference_System_Types
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:BoundCRS`, `geosrs:CRS`, `geosrs:CompoundCRS`,
+    `geosrs:EngineeringCRS`, `geosrs:GeocentricCRS`, `geosrs:GeodeticCRS`, `geosrs:GeographicCRS`, `geosrs:ParametricCRS`,
+    `geosrs:ProjectedCRS`, `geosrs:ReferenceSystem`, `geosrs:SelenographicCRS`, `geosrs:SingleCRS`, `geosrs:SpatialReferenceSystem`,
+    `geosrs:SpatioParametricCompoundCRS`, `geosrs:SpatioParametricTemporalCompoundCRS`, `geosrs:SpatioTemporalCompoundCRS`,
+    `geosrs:StaticCRS`, `geosrs:TemporalCRS` and `geosrs:VerticalCRS` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.srs
+    terms: [BoundCRS, CRS, CompoundCRS, EngineeringCRS, GeocentricCRS, GeodeticCRS, GeographicCRS, ParametricCRS,
+      ProjectedCRS, ReferenceSystem, SelenographicCRS, SingleCRS, SpatialReferenceSystem, SpatioParametricCompoundCRS,
+      SpatioParametricTemporalCompoundCRS, SpatioTemporalCompoundCRS, StaticCRS, TemporalCRS, VerticalCRS]

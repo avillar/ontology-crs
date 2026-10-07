@@ -1,0 +1,12 @@
+requirements:
+- id: planet/Interstellar_Body
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:ArtificialSatellite`, `geosrs:Asteroid`, `geosrs:Comet`,
+    `geosrs:DwarfPlanet`, `geosrs:InterstellarBody`, `geosrs:Moon`, `geosrs:NaturalSatellite`, `geosrs:Planet`,
+    `geosrs:PlanetStatus`, `geosrs:Plutoid`, `geosrs:Satellite` and `geosrs:Star` to be used in SPARQL
+    graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.planet
+    terms: [ArtificialSatellite, Asteroid, Comet, DwarfPlanet, InterstellarBody, Moon, NaturalSatellite,
+      Planet, PlanetStatus, Plutoid, Satellite, Star]

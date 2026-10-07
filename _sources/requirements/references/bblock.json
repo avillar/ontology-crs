@@ -1,0 +1,21 @@
+{
+  "name": "Normative References",
+  "abstract": "Normative references of the CRS ontology specification.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "references",
+  "version": "0.1",
+  "normative": true,
+  "tags": [
+    "geosrs",
+    "standard",
+    "clause"
+  ],
+  "resources": [
+    {
+      "ref": "references.yaml",
+      "role": "references",
+      "format": "application/yaml"
+    }
+  ]
+}

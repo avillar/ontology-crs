@@ -1,0 +1,248 @@
+class-id: projections
+requirements:
+- id: projections/Archaic_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:ArchaicProjection` and `geosrs:PtolemyIProjection`
+    to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [ArchaicProjection, PtolemyIProjection]
+- id: projections/Azimuthal_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AzimuthalProjection`, `geosrs:BreusingGeometricProjection`,
+    `geosrs:BreusingHarmonicProjection`, `geosrs:GinzburgIIProjection`, `geosrs:GinzburgIProjection`,
+    `geosrs:GnomonicProjection` and `geosrs:JamesAzimuthalProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [AzimuthalProjection, BreusingGeometricProjection, BreusingHarmonicProjection, GinzburgIIProjection,
+      GinzburgIProjection, GnomonicProjection, JamesAzimuthalProjection]
+- id: projections/Compromise_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:ArmadilloProjection`, `geosrs:BakerDinomicProjection`,
+    `geosrs:BertinProjection`, `geosrs:ChamberlinTrimetricProjection`, `geosrs:DenoyerSemiEllipticalProjection`,
+    `geosrs:FairgrieveProjection`, `geosrs:LarriveeProjection`, `geosrs:PetermannStarProjection`, `geosrs:SpilhausOceanicProjection`,
+    `geosrs:VanDerGrintenIIIProjection`, `geosrs:WinkelIIProjection`, `geosrs:WinkelIProjection` and `geosrs:WinkelSnyderProjection`
+    to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [ArmadilloProjection, BakerDinomicProjection, BertinProjection, ChamberlinTrimetricProjection,
+      DenoyerSemiEllipticalProjection, FairgrieveProjection, LarriveeProjection, PetermannStarProjection,
+      SpilhausOceanicProjection, VanDerGrintenIIIProjection, WinkelIIProjection, WinkelIProjection, WinkelSnyderProjection]
+- id: projections/Conformal_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AdamsProjection`, `geosrs:AdamsWorldInASquareIIProjection`,
+    `geosrs:AdamsWorldInASquareIProjection`, `geosrs:AugustEpicycloidalProjection`, `geosrs:CoxConformalProjection`,
+    `geosrs:EisenlohrProjection`, `geosrs:GS50Projection`, `geosrs:PeirceQuincuncialProjection` and `geosrs:StereographicProjection`
+    to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [AdamsProjection, AdamsWorldInASquareIIProjection, AdamsWorldInASquareIProjection, AugustEpicycloidalProjection,
+      CoxConformalProjection, EisenlohrProjection, GS50Projection, PeirceQuincuncialProjection, StereographicProjection]
+- id: projections/Conical_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:BipolarObliqueConicConformalProjection`, `geosrs:CentralConicProjection`,
+    `geosrs:HerschelConformalConicProjection`, `geosrs:Krovak`, `geosrs:LambertConformalConicProjection`,
+    `geosrs:MurdochIIIProjection`, `geosrs:MurdochIIProjection`, `geosrs:MurdochIProjection`, `geosrs:SchjerningIProjection`
+    and `geosrs:VitkovskyIProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [BipolarObliqueConicConformalProjection, CentralConicProjection, HerschelConformalConicProjection,
+      Krovak, LambertConformalConicProjection, MurdochIIIProjection, MurdochIIProjection, MurdochIProjection,
+      SchjerningIProjection, VitkovskyIProjection]
+- id: projections/Cylindrical_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:ArdenCloseProjection`, `geosrs:BSAMCylindricalProjection`,
+    `geosrs:BalthasartProjection`, `geosrs:BehrmannProjection`, `geosrs:BraunPerspectiveProjection`, `geosrs:BraunStereographicProjection`,
+    `geosrs:CompactMillerProjection`, `geosrs:CylindricalProjection`, `geosrs:CylindricalStereographicProjection`,
+    `geosrs:KarchenkoShabanovaProjection`, `geosrs:LabordeProjection`, `geosrs:MercatorProjection`, `geosrs:MillerProjection`,
+    `geosrs:PattersonCylindricalProjection`, `geosrs:PavlovProjection`, `geosrs:ToblerCylindricalIIProjection`,
+    `geosrs:ToblerCylindricalIProjection`, `geosrs:TransverseMercatorProjection`, `geosrs:UrmayevIIIProjection`
+    and `geosrs:WebMercatorProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [ArdenCloseProjection, BSAMCylindricalProjection, BalthasartProjection, BehrmannProjection,
+      BraunPerspectiveProjection, BraunStereographicProjection, CompactMillerProjection, CylindricalProjection,
+      CylindricalStereographicProjection, KarchenkoShabanovaProjection, LabordeProjection, MercatorProjection,
+      MillerProjection, PattersonCylindricalProjection, PavlovProjection, ToblerCylindricalIIProjection,
+      ToblerCylindricalIProjection, TransverseMercatorProjection, UrmayevIIIProjection, WebMercatorProjection]
+- id: projections/Equal_Area_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AlbersEqualAreaProjection`, `geosrs:AzimuthalEqualAreaProjection`,
+    `geosrs:CylindricalEqualArea`, `geosrs:EqualAreaProjection`, `geosrs:GallPetersProjection`, `geosrs:HoboDyerProjection`,
+    `geosrs:LambertAzimuthalEqualArea`, `geosrs:LambertCylindricalEqualAreaProjection`, `geosrs:ObliqueCylindricalEqualAreaProjection`,
+    `geosrs:SliceAndDiceVertexGreatCircle`, `geosrs:SlideAndDiceParallelSmallCircle`, `geosrs:SmythEqualSurfaceProjection`,
+    `geosrs:SnyderEqualArea`, `geosrs:ToblerWorldInASquareProjection`, `geosrs:TransverseCylindricalEqualAreaProjection`,
+    `geosrs:TrystanEdwardsProjection` and `geosrs:WiechelProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [AlbersEqualAreaProjection, AzimuthalEqualAreaProjection, CylindricalEqualArea, EqualAreaProjection,
+      GallPetersProjection, HoboDyerProjection, LambertAzimuthalEqualArea, LambertCylindricalEqualAreaProjection,
+      ObliqueCylindricalEqualAreaProjection, SliceAndDiceVertexGreatCircle, SlideAndDiceParallelSmallCircle,
+      SmythEqualSurfaceProjection, SnyderEqualArea, ToblerWorldInASquareProjection, TransverseCylindricalEqualAreaProjection,
+      TrystanEdwardsProjection, WiechelProjection]
+- id: projections/Equidistant_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AzimuthalEquidistantProjection`, `geosrs:BerghausStarProjection`,
+    `geosrs:CassiniProjection`, `geosrs:EquidistantConicProjection`, `geosrs:EquidistantCylindricalProjection`,
+    `geosrs:EquidistantProjection`, `geosrs:EquirectangularProjection`, `geosrs:ObliquePlateCarreeProjection`,
+    `geosrs:PlateCarreeProjection` and `geosrs:TwoPointEquidistantProjection` to be used in SPARQL graph
+    patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [AzimuthalEquidistantProjection, BerghausStarProjection, CassiniProjection, EquidistantConicProjection,
+      EquidistantCylindricalProjection, EquidistantProjection, EquirectangularProjection, ObliquePlateCarreeProjection,
+      PlateCarreeProjection, TwoPointEquidistantProjection]
+- id: projections/Globular_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:ApianGlobularIProjection`, `geosrs:BaconGlobularProjection`
+    and `geosrs:FournierGlobularIProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [ApianGlobularIProjection, BaconGlobularProjection, FournierGlobularIProjection]
+- id: projections/Lenticular_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:A4Projection`, `geosrs:BriesemeisterProjection`,
+    `geosrs:CiricIProjection`, `geosrs:CupolaProjection`, `geosrs:DedistortProjection`, `geosrs:DietrichKitadaProjection`,
+    `geosrs:FranculaIIIProjection`, `geosrs:FranculaIVProjection`, `geosrs:FranculaIXProjection`, `geosrs:FranculaVIIIProjection`,
+    `geosrs:FranculaVProjection`, `geosrs:FranculaXIIIProjection`, `geosrs:FranculaXIIProjection`, `geosrs:FranculaXIVProjection`,
+    `geosrs:HamusoidalProjection` and `geosrs:KissProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [A4Projection, BriesemeisterProjection, CiricIProjection, CupolaProjection, DedistortProjection,
+      DietrichKitadaProjection, FranculaIIIProjection, FranculaIVProjection, FranculaIXProjection, FranculaVIIIProjection,
+      FranculaVProjection, FranculaXIIIProjection, FranculaXIIProjection, FranculaXIVProjection, HamusoidalProjection,
+      KissProjection]
+- id: projections/Minimum_Error_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AiryProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [AiryProjection]
+- id: projections/Perspective_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:CentralCylindricalProjection`, `geosrs:GeneralVerticalPerspectiveProjection`,
+    `geosrs:GilbertTwoWorldPerspectiveProjection`, `geosrs:LaHireProjection`, `geosrs:LorgnaProjection`,
+    `geosrs:LowryProjection`, `geosrs:OrthographicProjection`, `geosrs:PerspectiveConicProjection`, `geosrs:PerspectiveProjection`,
+    `geosrs:TiltedPerspectiveProjection` and `geosrs:VerticalPerspectiveProjection` to be used in SPARQL
+    graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [CentralCylindricalProjection, GeneralVerticalPerspectiveProjection, GilbertTwoWorldPerspectiveProjection,
+      LaHireProjection, LorgnaProjection, LowryProjection, OrthographicProjection, PerspectiveConicProjection,
+      PerspectiveProjection, TiltedPerspectiveProjection, VerticalPerspectiveProjection]
+- id: projections/Polyconic_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:GinzburgIVProjection`, `geosrs:GinzburgIXProjection`,
+    `geosrs:GinzburgVIProjection`, `geosrs:GinzburgVProjection`, `geosrs:GottWagnerProjection`, `geosrs:HillEucyclicProjection`,
+    `geosrs:LagrangeProjection`, `geosrs:LaskowskiProjection`, `geosrs:PolyconicProjection`, `geosrs:RectangularPolyconicProjection`,
+    `geosrs:StabiusWernerIIIProjection`, `geosrs:StabiusWernerIProjection`, `geosrs:VanDerGrintenIIProjection`,
+    `geosrs:VanDerGrintenIProjection`, `geosrs:VanDerGrintenIVProjection`, `geosrs:WagnerIXProjection`,
+    `geosrs:WagnerVIIIProjection` and `geosrs:WagnerVIIProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [GinzburgIVProjection, GinzburgIXProjection, GinzburgVIProjection, GinzburgVProjection, GottWagnerProjection,
+      HillEucyclicProjection, LagrangeProjection, LaskowskiProjection, PolyconicProjection, RectangularPolyconicProjection,
+      StabiusWernerIIIProjection, StabiusWernerIProjection, VanDerGrintenIIProjection, VanDerGrintenIProjection,
+      VanDerGrintenIVProjection, WagnerIXProjection, WagnerVIIIProjection, WagnerVIIProjection]
+- id: projections/Polyhedral_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AuthaGraphProjection`, `geosrs:CahillKeyesProjection`,
+    `geosrs:CollignonButterflyProjection`, `geosrs:DodecahedralProjection`, `geosrs:DymaxionProjection`,
+    `geosrs:GnomonicButterflyProjection`, `geosrs:GnomonicCubedSphereProjection`, `geosrs:GnomonicIcosahedronProjection`,
+    `geosrs:GuyouProjection`, `geosrs:IcosahedralProjection`, `geosrs:LeeProjection`, `geosrs:MyrahedalProjection`,
+    `geosrs:OctantProjection`, `geosrs:PolyhedralProjection`, `geosrs:QuadrilateralizedSphericalCubeProjection`
+    and `geosrs:WatermanButterflyProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [AuthaGraphProjection, CahillKeyesProjection, CollignonButterflyProjection, DodecahedralProjection,
+      DymaxionProjection, GnomonicButterflyProjection, GnomonicCubedSphereProjection, GnomonicIcosahedronProjection,
+      GuyouProjection, IcosahedralProjection, LeeProjection, MyrahedalProjection, OctantProjection, PolyhedralProjection,
+      QuadrilateralizedSphericalCubeProjection, WatermanButterflyProjection]
+- id: projections/Projection
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:Projection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [Projection]
+- id: projections/Pseudo_Azimuthal_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AitoffObliqueProjection`, `geosrs:AitoffProjection`,
+    `geosrs:BartholomewProjection`, `geosrs:HammerProjection`, `geosrs:PseudoAzimuthalProjection`, `geosrs:Strebe1995Projection`
+    and `geosrs:WinkelTripelProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [AitoffObliqueProjection, AitoffProjection, BartholomewProjection, HammerProjection, PseudoAzimuthalProjection,
+      Strebe1995Projection, WinkelTripelProjection]
+- id: projections/Pseudo_Conical_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:AmericanPolyconicProjection`, `geosrs:BonneProjection`,
+    `geosrs:BottomleyProjection`, `geosrs:NicolosiGlobularProjection`, `geosrs:PseudoConicalProjection`,
+    `geosrs:PtolemyIIProjection`, `geosrs:StabiusWernerIIProjection` and `geosrs:WernerProjection` to
+    be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [AmericanPolyconicProjection, BonneProjection, BottomleyProjection, NicolosiGlobularProjection,
+      PseudoConicalProjection, PtolemyIIProjection, StabiusWernerIIProjection, WernerProjection]
+- id: projections/Pseudo_Cylindrical_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:ApianIIProjection`, `geosrs:AtlantisProjection`,
+    `geosrs:BaranyiIIIProjection`, `geosrs:BaranyiIIProjection`, `geosrs:BaranyiIProjection`, `geosrs:BaranyiIVProjection`,
+    `geosrs:BoggsEumorphicProjection`, `geosrs:BromleyProjection`, `geosrs:CabotProjection`, `geosrs:CollignonProjection`,
+    `geosrs:CrasterParabolicProjection`, `geosrs:DeakinMinimumErrorProjection`, `geosrs:Eckert1Projection`,
+    `geosrs:Eckert2Projection`, `geosrs:Eckert3Projection`, `geosrs:Eckert4Projection`, `geosrs:Eckert5Projection`,
+    `geosrs:Eckert6Projection`, `geosrs:EqualEarthProjection`, `geosrs:FaheyProjection`, `geosrs:FoucautProjection`,
+    `geosrs:FoucautSinusoidalProjection`, `geosrs:FournierIIProjection`, `geosrs:GinzburgVIIIProjection`,
+    `geosrs:GoodeHomolosineProjection`, `geosrs:HEALPixProjection`, `geosrs:HatanoAsymmetricalEqualAreaProjection`,
+    `geosrs:HufnagelProjection`, `geosrs:Kavrayskiy7Projection`, `geosrs:LoximuthalProjection`, `geosrs:MayrProjection`,
+    `geosrs:McBrydeThomasFlatPolarParabolicProjection`, `geosrs:McBrydeThomasFlatPolarQuarticProjection`,
+    `geosrs:McBrydeThomasFlatPolarSinusoidalProjection`, `geosrs:McBrydeThomasIIProjection`, `geosrs:McBrydeThomasIProjection`,
+    `geosrs:NaturalEarth2Projection`, `geosrs:NaturalEarthProjection`, `geosrs:NellHammerProjection`,
+    `geosrs:NellProjection`, `geosrs:OrteliusOvalProjection`, `geosrs:PseudoCylindricalProjection`, `geosrs:PutninsP1Projection`,
+    `geosrs:PutninsP2Projection`, `geosrs:PutninsP3'Projection`, `geosrs:PutninsP3Projection`, `geosrs:PutninsP4'Projection`,
+    `geosrs:PutninsP5'Projection`, `geosrs:PutninsP5Projection`, `geosrs:PutninsP6'Projection`, `geosrs:PutninsP6Projection`,
+    `geosrs:QuarticAuthalicProjection`, `geosrs:RobinsonProjection`, `geosrs:SinusoidalProjection`, `geosrs:TheTimesProjection`,
+    `geosrs:ToblerG1Projection`, `geosrs:ToblerHyperellipticalProjection`, `geosrs:WagnerIIIProjection`,
+    `geosrs:WagnerIIProjection`, `geosrs:WagnerIProjection`, `geosrs:WagnerIVProjection`, `geosrs:WagnerVIProjection`,
+    `geosrs:WagnerVProjection` and `geosrs:WerenskioldIProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [ApianIIProjection, AtlantisProjection, BaranyiIIIProjection, BaranyiIIProjection, BaranyiIProjection,
+      BaranyiIVProjection, BoggsEumorphicProjection, BromleyProjection, CabotProjection, CollignonProjection,
+      CrasterParabolicProjection, DeakinMinimumErrorProjection, Eckert1Projection, Eckert2Projection,
+      Eckert3Projection, Eckert4Projection, Eckert5Projection, Eckert6Projection, EqualEarthProjection,
+      FaheyProjection, FoucautProjection, FoucautSinusoidalProjection, FournierIIProjection, GinzburgVIIIProjection,
+      GoodeHomolosineProjection, HEALPixProjection, HatanoAsymmetricalEqualAreaProjection, HufnagelProjection,
+      Kavrayskiy7Projection, LoximuthalProjection, MayrProjection, McBrydeThomasFlatPolarParabolicProjection,
+      McBrydeThomasFlatPolarQuarticProjection, McBrydeThomasFlatPolarSinusoidalProjection, McBrydeThomasIIProjection,
+      McBrydeThomasIProjection, NaturalEarth2Projection, NaturalEarthProjection, NellHammerProjection,
+      NellProjection, OrteliusOvalProjection, PseudoCylindricalProjection, PutninsP1Projection, PutninsP2Projection,
+      PutninsP3'Projection, PutninsP3Projection, PutninsP4'Projection, PutninsP5'Projection, PutninsP5Projection,
+      PutninsP6'Projection, PutninsP6Projection, QuarticAuthalicProjection, RobinsonProjection, SinusoidalProjection,
+      TheTimesProjection, ToblerG1Projection, ToblerHyperellipticalProjection, WagnerIIIProjection, WagnerIIProjection,
+      WagnerIProjection, WagnerIVProjection, WagnerVIProjection, WagnerVProjection, WerenskioldIProjection]
+- id: projections/Stereographic_Projections
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:GallStereographicProjection`, `geosrs:MillerOblatedStereographicProjection`
+    and `geosrs:RoussilheProjection` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.projection
+    terms: [GallStereographicProjection, MillerOblatedStereographicProjection, RoussilheProjection]

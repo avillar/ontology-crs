@@ -1,0 +1,22 @@
+{
+  "name": "Common Instances",
+  "abstract": "Requirements class for the common instances (axis directions, spheroids, prime meridians, literal types) needed in CRS specifications.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "requirements-class",
+  "version": "0.1",
+  "normative": true,
+  "tags": [
+    "geosrs",
+    "standard",
+    "requirements-class"
+  ],
+  "standardization-target": "RDF vocabulary",
+  "resources": [
+    {
+      "ref": "requirements.yaml",
+      "role": "requirements",
+      "format": "application/yaml"
+    }
+  ]
+}

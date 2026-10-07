@@ -1,0 +1,14 @@
+{
+  "name": "SHACL Shapes",
+  "abstract": "SHACL shapes to validate graphs that use the CRS ontology.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "clause",
+  "version": "0.1",
+  "normative": false,
+  "tags": [
+    "geosrs",
+    "standard",
+    "clause"
+  ]
+}

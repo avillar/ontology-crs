@@ -1,0 +1,21 @@
+class-id: srsapplication
+requirements:
+- id: srsapplication/Map_Types
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:CadastreMap`, `geosrs:NauticalChart`, `geosrs:ThematicMap`,
+    `geosrs:TopographicMap` and `geosrs:WeatherMap` to be used in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.app
+    terms: [CadastreMap, NauticalChart, ThematicMap, TopographicMap, WeatherMap]
+- id: srsapplication/SRS_Application_Types
+  level: SHALL
+  statement: >-
+    Implementations SHALL allow the RDFS classes `geosrs:CoastalHydrography`, `geosrs:Drilling`, `geosrs:EngineeringSurvey`,
+    `geosrs:Hydrography`, `geosrs:OffshoreEngineering`, `geosrs:OilAndGasExploration`, `geosrs:SRSApplication`,
+    `geosrs:SatelliteNavigation`, `geosrs:SatelliteSurvey` and `geosrs:SpatialReferencing` to be used
+    in SPARQL graph patterns.
+  applies-to:
+    bblock: ogc.geosrs.app
+    terms: [CoastalHydrography, Drilling, EngineeringSurvey, Hydrography, OffshoreEngineering, OilAndGasExploration,
+      SRSApplication, SatelliteNavigation, SatelliteSurvey, SpatialReferencing]

@@ -16,3 +16,11 @@ schema-mapping:
 
 imports:
   - default
+
+plugins:
+  build:
+    # Generates the standards document described in standards.yaml
+    - classes: [standard_gen.plugin.SpecgenBuildPlugin]
+      pip: [bblocks-specgen @ git+https://github.com/ogcincubator/bblocks-specgen]
+      config:
+        build-dir: build/standards

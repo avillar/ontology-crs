@@ -1,0 +1,21 @@
+{
+  "name": "Terms and Definitions",
+  "abstract": "Terms and definitions used in the CRS ontology specification.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "terms",
+  "version": "0.1",
+  "normative": true,
+  "tags": [
+    "geosrs",
+    "standard",
+    "clause"
+  ],
+  "resources": [
+    {
+      "ref": "terms.yaml",
+      "role": "terms",
+      "format": "application/yaml"
+    }
+  ]
+}
