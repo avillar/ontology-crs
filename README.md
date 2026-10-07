@@ -9,7 +9,8 @@
 >   references, instances and annexes are blocks under `_sources/requirements/`. The text of the
 >   Metanorma template placeholders is kept on purpose, to compare both outputs. `base-uri` is still
 >   the `opengeospatial.github.io/ontology-crs` namespace, whatever the publishing location.
-> - **CI:** only the default Building Blocks workflow (`.github/workflows/process-bblocks.yml`) runs.
+> - **CI:** only the default Building Blocks workflow (`.github/workflows/process-bblocks.yml`) runs, with `skip-pages: false`
+>   so that it also deploys the repository to GitHub Pages (Pages source: GitHub Actions).
 >   The upstream "Ontology Documentation CI" (CSV → TTL, pylode docs, Metanorma, GitHub Pages
 >   deployment) is **disabled**: it lives in `.github/workflows-disabled/` and no longer produces the
 >   `spec/` HTML/PDF, the pylode and class-tree pages or `context/`.
