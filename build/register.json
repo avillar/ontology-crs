@@ -1,21 +1,22 @@
 {
+  "metaRegistry": "https://w3id.org/ogc/bblocks/meta-register.json",
   "name": "SRS Ontology",
   "abstract": "Building blocks for implementation of the OGC SRS ontology",
   "description": "Each building block defines a reusable JSON schema that is mapped to the equivalent SRS Ontology concept.\n\nEach fragment allows for transparent and validatable use of JSON-LD contexts to map schema elements to equivalent terms from the GeoSPARQL ontology. \n\n _These components are under review by the GeoSPARQL SWG as candidate canonical implementations._ \n\n Each building block allows for examples transformed to RDF, which in turn allows for the use of SHACL rules to enforce the semantics of the GeoSPARQL specifications.\n",
-  "modified": "2026-07-21T13:18:50.982513",
+  "modified": "2026-10-07T16:39:57.793291",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"782e6be7338edb48ec5ec9a0c1d7f8df22df5ca0",
-      "shortCommitId": "\"782e6b",
-      "date": "2026-07-10T07:19:45+00:00\""
+      "commitId": "\"864ddcf48e5bf8be9c5660d54d35b5d0e702b41b",
+      "shortCommitId": "\"864ddc",
+      "date": "2026-10-07T14:32:33+00:00\""
     }
   },
-  "gitRepository": "https://github.com/opengeospatial/ontology-crs",
-  "gitHubRepository": "https://github.com/opengeospatial/ontology-crs/blob/master/",
-  "baseURL": "https://opengeospatial.github.io/ontology-crs/",
-  "viewerURL": "https://opengeospatial.github.io/ontology-crs/bblocks/",
-  "validationReport": "https://opengeospatial.github.io/ontology-crs/build/tests/report.html",
-  "validationReportJson": "https://opengeospatial.github.io/ontology-crs/build/tests/report.json",
+  "gitRepository": "https://github.com/avillar/ontology-crs",
+  "gitHubRepository": "https://github.com/avillar/ontology-crs/blob/master/",
+  "baseURL": "https://avillar.github.io/ontology-crs/",
+  "viewerURL": "https://avillar.github.io/ontology-crs/bblocks",
+  "validationReport": "https://avillar.github.io/ontology-crs/build/tests/report.html",
+  "validationReportJson": "https://avillar.github.io/ontology-crs/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
@@ -31,7 +32,7 @@
       "itemClass": "model",
       "register": "geosrs",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-21",
+      "dateOfLastChange": "2026-10-07",
       "sources": [
         {
           "title": "Spec Section",
@@ -44,21 +45,22 @@
         "geosrs"
       ],
       "shaclShapes": {},
-      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/app/",
+      "ontology": "https://avillar.github.io/ontology-crs/build/annotated/geosrs/app/ontology.ttl",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/app/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/app/",
+      "testOutputs": "https://github.com/avillar/ontology-crs/blob/master/build/tests/geosrs/app/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/app/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/app/index.md"
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/app/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/app/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.app"
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.app"
         }
       }
     },
@@ -79,7 +81,7 @@
         "/req/co/Coordinate_Operation_Parameters",
         "/req/co/Coordinate_Operation_Properties"
       ],
-      "dateOfLastChange": "2026-07-21",
+      "dateOfLastChange": "2026-10-07",
       "sources": [
         {
           "title": "Spec Section",
@@ -92,22 +94,22 @@
         "geosrs"
       ],
       "shaclShapes": {},
-      "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/co/ontology.ttl",
-      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/co/",
+      "ontology": "https://avillar.github.io/ontology-crs/build/annotated/geosrs/co/ontology.ttl",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/co/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/co/",
+      "testOutputs": "https://github.com/avillar/ontology-crs/blob/master/build/tests/geosrs/co/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/co/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/co/index.md"
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/co/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/co/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.co"
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.co"
         }
       }
     },
@@ -130,7 +132,7 @@
         "/req/cs/Temporal_Coordinate_Systems"
       ],
       "version": "0.1",
-      "dateOfLastChange": "2026-07-21",
+      "dateOfLastChange": "2026-10-07",
       "sources": [
         {
           "title": "Spec Section",
@@ -144,25 +146,25 @@
       ],
       "shaclShapes": {
         "ogc.geosrs.cs": [
-          "https://opengeospatial.github.io/ontology-crs/_sources/cs/rules.shacl"
+          "https://avillar.github.io/ontology-crs/_sources/cs/rules.shacl"
         ]
       },
-      "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/cs/ontology.ttl",
-      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/cs/",
+      "ontology": "https://avillar.github.io/ontology-crs/build/annotated/geosrs/cs/ontology.ttl",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/cs/",
       "validationPassed": false,
-      "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/cs/",
+      "testOutputs": "https://github.com/avillar/ontology-crs/blob/master/build/tests/geosrs/cs/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/cs/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/cs/index.md"
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/cs/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/cs/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.cs"
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.cs"
         }
       }
     },
@@ -184,7 +186,7 @@
         "/req/datum/Spheroid_Types"
       ],
       "version": "0.1",
-      "dateOfLastChange": "2026-07-21",
+      "dateOfLastChange": "2026-10-07",
       "sources": [
         {
           "title": "Spec Section",
@@ -198,25 +200,25 @@
       ],
       "shaclShapes": {
         "ogc.geosrs.datum": [
-          "https://opengeospatial.github.io/ontology-crs/_sources/datum/rules.shacl"
+          "https://avillar.github.io/ontology-crs/_sources/datum/rules.shacl"
         ]
       },
-      "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/datum/ontology.ttl",
-      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/datum/",
+      "ontology": "https://avillar.github.io/ontology-crs/build/annotated/geosrs/datum/ontology.ttl",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/datum/",
       "validationPassed": false,
-      "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/datum/",
+      "testOutputs": "https://github.com/avillar/ontology-crs/blob/master/build/tests/geosrs/datum/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/datum/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/datum/index.md"
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/datum/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/datum/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.datum"
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.datum"
         }
       }
     },
@@ -231,7 +233,7 @@
       "itemClass": "model",
       "register": "geosrs",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-21",
+      "dateOfLastChange": "2026-10-07",
       "sources": [
         {
           "title": "Spec Section",
@@ -244,22 +246,22 @@
         "geosrs"
       ],
       "shaclShapes": {},
-      "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/planet/ontology.ttl",
-      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/planet/",
+      "ontology": "https://avillar.github.io/ontology-crs/build/annotated/geosrs/planet/ontology.ttl",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/planet/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/planet/",
+      "testOutputs": "https://github.com/avillar/ontology-crs/blob/master/build/tests/geosrs/planet/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/planet/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/planet/index.md"
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/planet/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/planet/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.planet"
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.planet"
         }
       }
     },
@@ -295,7 +297,7 @@
         "/req/projections/Stereographic_Projections"
       ],
       "version": "0.1",
-      "dateOfLastChange": "2026-07-21",
+      "dateOfLastChange": "2026-10-07",
       "sources": [
         {
           "title": "Spec Section",
@@ -308,22 +310,341 @@
         "geosrs"
       ],
       "shaclShapes": {},
-      "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/projection/ontology.ttl",
-      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/projection/",
+      "ontology": "https://avillar.github.io/ontology-crs/build/annotated/geosrs/projection/ontology.ttl",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/projection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/projection/",
+      "testOutputs": "https://github.com/avillar/ontology-crs/blob/master/build/tests/geosrs/projection/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/projection/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/projection/index.md"
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/projection/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/projection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.projection"
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.projection"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geosrs.requirements.alignments",
+      "name": "Alignments",
+      "abstract": "Namespaces of the ontologies the CRS ontology is aligned to.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-07T00:00:00Z",
+      "itemClass": "clause",
+      "version": "0.1",
+      "normative": false,
+      "tags": [
+        "geosrs",
+        "standard",
+        "clause"
+      ],
+      "shaclShapes": {},
+      "dateOfLastChange": "2026-10-07",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/alignments/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/alignments/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/alignments/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.alignments"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geosrs.requirements.conventions",
+      "name": "Conventions",
+      "abstract": "Conventions used in the CRS ontology specification.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-07T00:00:00Z",
+      "itemClass": "clause",
+      "version": "0.1",
+      "normative": true,
+      "tags": [
+        "geosrs",
+        "standard",
+        "clause"
+      ],
+      "shaclShapes": {},
+      "dateOfLastChange": "2026-10-07",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/conventions/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/conventions/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/conventions/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.conventions"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geosrs.requirements.instances",
+      "name": "Common Instances",
+      "abstract": "Requirements class for the common instances (axis directions, spheroids, prime meridians, literal types) needed in CRS specifications.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-07T00:00:00Z",
+      "itemClass": "requirements-class",
+      "version": "0.1",
+      "normative": true,
+      "tags": [
+        "geosrs",
+        "standard",
+        "requirements-class"
+      ],
+      "standardization-target": "RDF vocabulary",
+      "resources": [
+        {
+          "ref": "https://avillar.github.io/ontology-crs/_sources/requirements/instances/requirements.yaml",
+          "role": "requirements",
+          "format": "application/yaml"
+        }
+      ],
+      "shaclShapes": {},
+      "dateOfLastChange": "2026-10-07",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/instances/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/instances/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/instances/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.instances"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geosrs.requirements.jsonld-context",
+      "name": "JSON-LD Context",
+      "abstract": "JSON-LD contexts for compatibility with JSON-based CRS formats.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-07T00:00:00Z",
+      "itemClass": "clause",
+      "version": "0.1",
+      "normative": false,
+      "tags": [
+        "geosrs",
+        "standard",
+        "clause"
+      ],
+      "shaclShapes": {},
+      "dateOfLastChange": "2026-10-07",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/jsonld-context/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/jsonld-context/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/jsonld-context/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.jsonld-context"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geosrs.requirements.references",
+      "name": "Normative References",
+      "abstract": "Normative references of the CRS ontology specification.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-07T00:00:00Z",
+      "itemClass": "references",
+      "version": "0.1",
+      "normative": true,
+      "tags": [
+        "geosrs",
+        "standard",
+        "clause"
+      ],
+      "resources": [
+        {
+          "ref": "https://avillar.github.io/ontology-crs/_sources/requirements/references/references.yaml",
+          "role": "references",
+          "format": "application/yaml"
+        }
+      ],
+      "shaclShapes": {},
+      "dateOfLastChange": "2026-10-07",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/references/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/references/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/references/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.references"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geosrs.requirements.revision-history",
+      "name": "Revision History",
+      "abstract": "Revision history of the CRS ontology specification.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-07T00:00:00Z",
+      "itemClass": "clause",
+      "version": "0.1",
+      "normative": false,
+      "tags": [
+        "geosrs",
+        "standard",
+        "clause"
+      ],
+      "shaclShapes": {},
+      "dateOfLastChange": "2026-10-07",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/revision-history/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/revision-history/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/revision-history/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.revision-history"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geosrs.requirements.scope",
+      "name": "Scope",
+      "abstract": "Scope of the CRS ontology specification.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-07T00:00:00Z",
+      "itemClass": "clause",
+      "version": "0.1",
+      "normative": true,
+      "tags": [
+        "geosrs",
+        "standard",
+        "clause"
+      ],
+      "shaclShapes": {},
+      "dateOfLastChange": "2026-10-07",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/scope/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/scope/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/scope/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.scope"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geosrs.requirements.shacl-shapes",
+      "name": "SHACL Shapes",
+      "abstract": "SHACL shapes to validate graphs that use the CRS ontology.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-07T00:00:00Z",
+      "itemClass": "clause",
+      "version": "0.1",
+      "normative": false,
+      "tags": [
+        "geosrs",
+        "standard",
+        "clause"
+      ],
+      "shaclShapes": {},
+      "dateOfLastChange": "2026-10-07",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/shacl-shapes/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/shacl-shapes/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/shacl-shapes/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.shacl-shapes"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.geosrs.requirements.terms",
+      "name": "Terms and Definitions",
+      "abstract": "Terms and definitions used in the CRS ontology specification.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-07T00:00:00Z",
+      "itemClass": "terms",
+      "version": "0.1",
+      "normative": true,
+      "tags": [
+        "geosrs",
+        "standard",
+        "clause"
+      ],
+      "resources": [
+        {
+          "ref": "https://avillar.github.io/ontology-crs/_sources/requirements/terms/terms.yaml",
+          "role": "terms",
+          "format": "application/yaml"
+        }
+      ],
+      "shaclShapes": {},
+      "dateOfLastChange": "2026-10-07",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/terms/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/terms/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/terms/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.terms"
         }
       }
     },
@@ -338,7 +659,7 @@
       "itemClass": "model",
       "register": "geosrs",
       "version": "0.1",
-      "dateOfLastChange": "2026-07-21",
+      "dateOfLastChange": "2026-10-07",
       "sources": [
         {
           "title": "Spec Section",
@@ -352,46 +673,59 @@
       ],
       "shaclShapes": {
         "ogc.geosrs.srs": [
-          "https://opengeospatial.github.io/ontology-crs/_sources/srs/rules.shacl"
+          "https://avillar.github.io/ontology-crs/_sources/srs/rules.shacl"
         ]
       },
-      "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/srs/ontology.ttl",
-      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/srs/",
+      "ontology": "https://avillar.github.io/ontology-crs/build/annotated/geosrs/srs/ontology.ttl",
+      "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/srs/",
       "validationPassed": false,
-      "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/srs/",
+      "testOutputs": "https://github.com/avillar/ontology-crs/blob/master/build/tests/geosrs/srs/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/srs/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/srs/index.md"
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/srs/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/srs/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.srs"
+          "url": "https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.srs"
         }
       }
     }
   ],
-  "remoteCacheDir": "https://opengeospatial.github.io/ontology-crs/build/annotated/_cache",
+  "buildPlugins": [
+    {
+      "classes": [
+        "standard_gen.plugin.SpecgenBuildPlugin"
+      ],
+      "pip": [
+        "bblocks-specgen @ git+https://github.com/ogcincubator/bblocks-specgen"
+      ],
+      "urls": [
+        "https://pypi.org/project/bblocks-specgen"
+      ]
+    }
+  ],
+  "remoteCacheDir": "https://avillar.github.io/ontology-crs/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/ontology-crs/build/register.json",
+      "href": "https://avillar.github.io/ontology-crs/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/ontology-crs/build/bblocks.ttl",
+      "href": "https://avillar.github.io/ontology-crs/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/ontology-crs/build/bblocks.jsonld",
+      "href": "https://avillar.github.io/ontology-crs/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }

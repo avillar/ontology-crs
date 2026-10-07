@@ -1,0 +1,25 @@
+
+
+{
+  "itemIdentifier": "ogc.geosrs.requirements.conventions",
+  "name": "Conventions",
+  "abstract": "Conventions used in the CRS ontology specification.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "clause",
+  "version": "0.1",
+  "normative": true,
+  "tags": [
+    "geosrs",
+    "standard",
+    "clause"
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-10-07",
+  "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/conventions/",
+  "validationPassed": true,
+  "description": "> **NOTE** This section provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.\n\n## Identifiers\n\nThe normative provisions in this standard are denoted by the URI\n\n`https://opengeospatial.github.io/ontology-crs`\n\nAll requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.\n\n## Namespaces\n\nThe suggested prefix for the namespace of the core terms, `https://w3id.org/geosrs/`, is `geosrs`. Each module defines its terms under its own namespace, `https://w3id.org/geosrs/<module>/`, with the suggested prefix `geosrs_<module>`.\n\n## Other conventions\n\n\\<Place any other convention needed with its corresponding title\\>\n",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/avillar/ontology-crs",
+  "gitPath": "_sources/requirements/conventions"
+}

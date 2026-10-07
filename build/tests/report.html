@@ -64,9 +64,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-07-21T13:18:51.564138+00:00</small>
+            <small class="datetime">Generated at 2026-10-07T16:40:06.921032+00:00</small>
                 <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 4 / 7 (57.14%)
+                    Number of passing building blocks: 13 / 16 (81.25%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -202,16 +202,16 @@
 
                                     <span class="badge text-bg-danger me-2">
                                             Tests Failed
-                                            (66.67% passed)
+                                            (81.82% passed)
                                     </span>
                                 </button>
                             </h2>
                             <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.cs">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-danger">
-                                            Test passed: 4 / 6
+                                            Test passed: 9 / 11
                                         </p>
-                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-1">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geosrs.cs-1">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
@@ -221,8 +221,9 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="../../_sources/cs/tests/1dcs.ttl" target="_blank">1dcs.ttl</a>
+                                                    <a href="../../_sources/cs/tests/1dcs-1-fail.ttl" target="_blank">1dcs-1-fail.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
                                                     <a class="anchor" href="#item-ogc.geosrs.cs-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
@@ -230,31 +231,45 @@
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-files ">Using 1dcs.ttl from test resources</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using 1dcs-1-fail.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/cs/rules.shacl:
   Validation Report
-  Conforms: True
+  Conforms: False
+  Results (1):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:1DCoordinateSystem_axis_Shape_Property
+  	Focus Node: exsrs:ecsc
+  	Result Path: geosrs_cs:axis
+  	Message: A 1D coordinate system should have exactly one axis
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -270,12 +285,12 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="../../_sources/cs/tests/axisDirection-fail.ttl" target="_blank">axisDirection-fail.ttl</a>
+                                                    <a href="../../_sources/cs/tests/1dcs-2-fail.ttl" target="_blank">1dcs-2-fail.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
                                                     <a class="anchor" href="#item-ogc.geosrs.cs-2">¶</a>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
@@ -283,32 +298,49 @@
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-files ">Using axisDirection-fail.ttl from test resources</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using 1dcs-2-fail.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/cs/rules.shacl:
   Validation Report
-  Conforms: True
+  Conforms: False
+  Results (2):
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:1DCoordinateSystem_axis_Shape_Property
+  	Focus Node: exsrs:ecsc
+  	Value Node: exsrs:excsc_axis2
+  	Result Path: geosrs_cs:axis
+  	Message: A 1D coordinate system should have exactly one axis
+  Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:1DCoordinateSystem_axis_Shape_Property
+  	Focus Node: exsrs:ecsc
+  	Result Path: geosrs_cs:axis
+  	Message: A 1D coordinate system should have exactly one axis
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis2,exsrs:ecsc_axis1
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -324,7 +356,7 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="../../_sources/cs/tests/axisDirection.ttl" target="_blank">axisDirection.ttl</a>
+                                                    <a href="../../_sources/cs/tests/1dcs.ttl" target="_blank">1dcs.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                     <a class="anchor" href="#item-ogc.geosrs.cs-3">¶</a>
                                                     <div class="float-end">
@@ -336,9 +368,12 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-files ">Using axisDirection.ttl from test resources</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using 1dcs.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
   Validation Report
@@ -346,24 +381,24 @@
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-4">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geosrs.cs-4">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
@@ -373,14 +408,329 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="../../_sources/cs/tests/coordinateSystemAxis.ttl" target="_blank">coordinateSystemAxis.ttl</a>
+                                                    <a href="../../_sources/cs/tests/axisDirection-1-fail.ttl" target="_blank">axisDirection-1-fail.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
                                                     <a class="anchor" href="#item-ogc.geosrs.cs-4">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using axisDirection-1-fail.ttl from test resources</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/cs/rules.shacl:
+  Validation Report
+  Conforms: False
+  Results (1):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CoordinateSystemAxis_axisDirection_Shape_Property
+  	Focus Node: exsrs:myAxis
+  	Result Path: geosrs_cs:axisDirection
+  	Message: A coordinate system axis should have exactly one axis direction
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geosrs.cs-5">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-7"
+                                                            aria-expanded="false" aria-controls="uid-7"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/cs/tests/axisDirection-2-fail.ttl" target="_blank">axisDirection-2-fail.ttl</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-5">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-7">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using axisDirection-2-fail.ttl from test resources</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/cs/rules.shacl:
+  Validation Report
+  Conforms: False
+  Results (3):
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CoordinateSystemAxis_axisDirection_Shape_Property
+  	Focus Node: exsrs:myAxis
+  	Value Node: geosrs_cs:East
+  	Result Path: geosrs_cs:axisDirection
+  	Message: A coordinate system axis should have exactly one axis direction
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CoordinateSystemAxis_axisDirection_Shape_Property
+  	Focus Node: exsrs:myAxis
+  	Value Node: geosrs_cs:North
+  	Result Path: geosrs_cs:axisDirection
+  	Message: A coordinate system axis should have exactly one axis direction
+  Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CoordinateSystemAxis_axisDirection_Shape_Property
+  	Focus Node: exsrs:myAxis
+  	Result Path: geosrs_cs:axisDirection
+  	Message: A coordinate system axis should have exactly one axis direction
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geosrs.cs-6">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-8"
+                                                            aria-expanded="false" aria-controls="uid-8"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/cs/tests/axisDirection-fail.ttl" target="_blank">axisDirection-fail.ttl</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-6">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-8">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using axisDirection-fail.ttl from test resources</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-7">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-9"
+                                                            aria-expanded="false" aria-controls="uid-9"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/cs/tests/axisDirection.ttl" target="_blank">axisDirection.ttl</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-7">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-9">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using axisDirection.ttl from test resources</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geosrs.cs-8">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-10"
+                                                            aria-expanded="false" aria-controls="uid-10"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/cs/tests/coordinateSystemAxis-fail.ttl" target="_blank">coordinateSystemAxis-fail.ttl</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-8">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-10">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using coordinateSystemAxis-fail.ttl from test resources</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/cs/rules.shacl:
+  Validation Report
+  Conforms: False
+  Results (1):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CoordinateSystem_axis_Shape_Property
+  	Focus Node: exsrs:ecsc
+  	Result Path: geosrs_cs:axis
+  	Message: A coordinate system should have at least one axis
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-9">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-11"
+                                                            aria-expanded="false" aria-controls="uid-11"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/cs/tests/coordinateSystemAxis.ttl" target="_blank">coordinateSystemAxis.ttl</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-9">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-11">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -388,6 +738,9 @@
                                                                     <div class="font-monospace entry-message section-files ">Using coordinateSystemAxis.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/cs/rules.shacl:
   Validation Report
@@ -403,41 +756,41 @@
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis2,exsrs:ecsc_axis1
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-5">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-10">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-7"
-                                                            aria-expanded="false" aria-controls="uid-7"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-12"
+                                                            aria-expanded="false" aria-controls="uid-12"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geosrs/cs/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
-                                                    <a class="anchor" href="#item-ogc.geosrs.cs-5">¶</a>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-10">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-7">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-12">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -452,47 +805,50 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-6">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-11">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-8"
-                                                            aria-expanded="false" aria-controls="uid-8"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-13"
+                                                            aria-expanded="false" aria-controls="uid-13"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="geosrs/cs/example_1_2.ttl" target="_blank">example_1_2.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
-                                                    <a class="anchor" href="#item-ogc.geosrs.cs-6">¶</a>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-11">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-8">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-13">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -507,24 +863,27 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/cs/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -559,8 +918,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-9"
-                                                            aria-expanded="false" aria-controls="uid-9"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-14"
+                                                            aria-expanded="false" aria-controls="uid-14"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -573,7 +932,7 @@
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-9">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-14">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                 
@@ -586,19 +945,22 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/datum/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -608,8 +970,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-10"
-                                                            aria-expanded="false" aria-controls="uid-10"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-15"
+                                                            aria-expanded="false" aria-controls="uid-15"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -621,7 +983,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-10">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-15">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -630,19 +992,22 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/datum/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -652,8 +1017,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-11"
-                                                            aria-expanded="false" aria-controls="uid-11"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-16"
+                                                            aria-expanded="false" aria-controls="uid-16"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -666,7 +1031,7 @@
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-11">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-16">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                 
@@ -679,19 +1044,22 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/datum/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -701,8 +1069,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-12"
-                                                            aria-expanded="false" aria-controls="uid-12"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-17"
+                                                            aria-expanded="false" aria-controls="uid-17"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -714,7 +1082,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-12">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-17">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -723,19 +1091,22 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/datum/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -745,8 +1116,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-13"
-                                                            aria-expanded="false" aria-controls="uid-13"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-18"
+                                                            aria-expanded="false" aria-controls="uid-18"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -758,7 +1129,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-13">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-18">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -773,19 +1144,22 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/datum/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -820,8 +1194,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-14"
-                                                            aria-expanded="false" aria-controls="uid-14"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-19"
+                                                            aria-expanded="false" aria-controls="uid-19"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -833,7 +1207,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-14">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-19">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -878,8 +1252,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-15"
-                                                            aria-expanded="false" aria-controls="uid-15"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-20"
+                                                            aria-expanded="false" aria-controls="uid-20"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -891,7 +1265,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-15">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-20">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -907,6 +1281,213 @@
                                                 </div>
                                             </div>
                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.requirements.alignments" id="bblock-ogc.geosrs.requirements.alignments">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.requirements\.alignments">
+                                    <div class="flex-fill">
+                                        Alignments
+                                        <small class="ms-2 bblock-id">ogc.geosrs.requirements.alignments</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.requirements.alignments">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.requirements.alignments">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.requirements.conventions" id="bblock-ogc.geosrs.requirements.conventions">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.requirements\.conventions">
+                                    <div class="flex-fill">
+                                        Conventions
+                                        <small class="ms-2 bblock-id">ogc.geosrs.requirements.conventions</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.requirements.conventions">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.requirements.conventions">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.requirements.instances" id="bblock-ogc.geosrs.requirements.instances">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.requirements\.instances">
+                                    <div class="flex-fill">
+                                        Common Instances
+                                        <small class="ms-2 bblock-id">ogc.geosrs.requirements.instances</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.requirements.instances">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.requirements.instances">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.requirements.jsonld-context" id="bblock-ogc.geosrs.requirements.jsonld-context">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.requirements\.jsonld-context">
+                                    <div class="flex-fill">
+                                        JSON-LD Context
+                                        <small class="ms-2 bblock-id">ogc.geosrs.requirements.jsonld-context</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.requirements.jsonld-context">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.requirements.jsonld-context">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.requirements.references" id="bblock-ogc.geosrs.requirements.references">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.requirements\.references">
+                                    <div class="flex-fill">
+                                        Normative References
+                                        <small class="ms-2 bblock-id">ogc.geosrs.requirements.references</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.requirements.references">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.requirements.references">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.requirements.revision-history" id="bblock-ogc.geosrs.requirements.revision-history">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.requirements\.revision-history">
+                                    <div class="flex-fill">
+                                        Revision History
+                                        <small class="ms-2 bblock-id">ogc.geosrs.requirements.revision-history</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.requirements.revision-history">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.requirements.revision-history">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.requirements.scope" id="bblock-ogc.geosrs.requirements.scope">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.requirements\.scope">
+                                    <div class="flex-fill">
+                                        Scope
+                                        <small class="ms-2 bblock-id">ogc.geosrs.requirements.scope</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.requirements.scope">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.requirements.scope">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.requirements.shacl-shapes" id="bblock-ogc.geosrs.requirements.shacl-shapes">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.requirements\.shacl-shapes">
+                                    <div class="flex-fill">
+                                        SHACL Shapes
+                                        <small class="ms-2 bblock-id">ogc.geosrs.requirements.shacl-shapes</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.requirements.shacl-shapes">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.requirements.shacl-shapes">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.requirements.terms" id="bblock-ogc.geosrs.requirements.terms">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.requirements\.terms">
+                                    <div class="flex-fill">
+                                        Terms and Definitions
+                                        <small class="ms-2 bblock-id">ogc.geosrs.requirements.terms</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.requirements.terms">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.requirements.terms">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
                                 </div>
                             </div>
                         </div>
@@ -936,8 +1517,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-16"
-                                                            aria-expanded="false" aria-controls="uid-16"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-21"
+                                                            aria-expanded="false" aria-controls="uid-21"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -950,7 +1531,7 @@
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-16">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-21">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                 
@@ -963,25 +1544,28 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/srs/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
  - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
  - Shape geosrs:GeographicCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -991,8 +1575,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-17"
-                                                            aria-expanded="false" aria-controls="uid-17"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-22"
+                                                            aria-expanded="false" aria-controls="uid-22"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -1004,7 +1588,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-17">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-22">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -1013,25 +1597,28 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/srs/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
  - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
  - Shape geosrs:GeographicCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1041,8 +1628,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-18"
-                                                            aria-expanded="false" aria-controls="uid-18"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-23"
+                                                            aria-expanded="false" aria-controls="uid-23"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -1055,7 +1642,7 @@
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-18">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-23">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                 
@@ -1068,25 +1655,28 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/srs/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
  - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
  - Shape geosrs:GeographicCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1096,8 +1686,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-19"
-                                                            aria-expanded="false" aria-controls="uid-19"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-24"
+                                                            aria-expanded="false" aria-controls="uid-24"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -1110,7 +1700,7 @@
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-19">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-24">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                 
@@ -1123,25 +1713,28 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/srs/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
  - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
  - Shape geosrs:GeographicCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1151,8 +1744,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-20"
-                                                            aria-expanded="false" aria-controls="uid-20"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-25"
+                                                            aria-expanded="false" aria-controls="uid-25"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -1164,7 +1757,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-20">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-25">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -1173,25 +1766,28 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/srs/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
  - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
  - Shape geosrs:GeographicCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1201,8 +1797,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-21"
-                                                            aria-expanded="false" aria-controls="uid-21"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-26"
+                                                            aria-expanded="false" aria-controls="uid-26"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -1214,7 +1810,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-21">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-26">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -1229,25 +1825,28 @@
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/srs/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
  - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
  - Shape geosrs:GeographicCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
 </div>
                                                     </div>
                                                 </div>

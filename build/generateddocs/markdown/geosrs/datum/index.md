@@ -15,7 +15,8 @@ This module describes how to model a datum using the SRS ontology vocabulary.
 
 Datum classes and properties are described under the namespace https://w3id.org/geosrs/datum/
 
-![SRS Ontology Datum Module](assets/datum.png)
+![SRS Ontology Datum Module](assets/datum.svg)
+
 ## Examples
 
 ### SRS Ontology Datum Module Example
@@ -44,6 +45,6 @@ exsrs:myellipsoid rdf:type geosrs_datum:Ellipsoid ;
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/ontology-crs](https://github.com/opengeospatial/ontology-crs)
+* URL: [https://github.com/avillar/ontology-crs](https://github.com/avillar/ontology-crs)
 * Path: `_sources/datum`
 

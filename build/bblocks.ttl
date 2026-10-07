@@ -23,18 +23,22 @@
     dct:abstract "A building block defining SRS Ontology Application Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/app/index.md> ],
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/app/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/app/index.json> ],
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/app/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.app> ] ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.app> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-07-21"^^xsd:date ;
+    dct:modified "2026-10-07"^^xsd:date ;
     dct:source <https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#srsapplication> ;
-    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Application module" ;
-    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
+    prof:hasResource [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/build/annotated/geosrs/app/ontology.ttl> ;
+            prof:hasRole role:specification ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -46,26 +50,26 @@
     rdfs:label "SRS Ontology - Coordinate Operation module" ;
     dct:abstract "A building block defining SRS Ontology Coordinate Operation Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/co/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/co/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.co> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/co/index.json> ] ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.co> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/co/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-07-21"^^xsd:date ;
+    dct:modified "2026-10-07"^^xsd:date ;
     dct:source <https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#co> ;
-    modspec:requirementsClass <https://opengeospatial.github.io/req/co/Coordinate_Operation_Categories>,
-        <https://opengeospatial.github.io/req/co/Coordinate_Operation_Methods>,
-        <https://opengeospatial.github.io/req/co/Coordinate_Operation_Parameters>,
-        <https://opengeospatial.github.io/req/co/Coordinate_Operation_Properties> ;
-    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
+    modspec:requirementsClass <https://avillar.github.io/req/co/Coordinate_Operation_Categories>,
+        <https://avillar.github.io/req/co/Coordinate_Operation_Methods>,
+        <https://avillar.github.io/req/co/Coordinate_Operation_Parameters>,
+        <https://avillar.github.io/req/co/Coordinate_Operation_Properties> ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Coordinate Operation module" ;
-    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
     prof:hasResource [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
-            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/co/ontology.ttl> ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/build/annotated/geosrs/co/ontology.ttl> ;
             prof:hasRole role:specification ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -78,22 +82,22 @@
     rdfs:label "SRS Ontology - Planet module" ;
     dct:abstract "A building block defining SRS Ontology Planet Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/planet/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/planet/index.json> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/planet/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/planet/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.planet> ] ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.planet> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-07-21"^^xsd:date ;
+    dct:modified "2026-10-07"^^xsd:date ;
     dct:source <https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#planet> ;
-    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Planet module" ;
-    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
     prof:hasResource [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
-            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/planet/ontology.ttl> ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/build/annotated/geosrs/planet/ontology.ttl> ;
             prof:hasRole role:specification ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -107,59 +111,284 @@
     dct:abstract "A building block defining SRS Ontology Projection Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.projection> ],
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.projection> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/projection/index.json> ],
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/projection/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/projection/index.md> ] ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/projection/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-07-21"^^xsd:date ;
+    dct:modified "2026-10-07"^^xsd:date ;
     dct:source <https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#projection> ;
-    modspec:requirementsClass <https://opengeospatial.github.io/req/projections/Archaic_Projections>,
-        <https://opengeospatial.github.io/req/projections/Azimuthal_Projections>,
-        <https://opengeospatial.github.io/req/projections/Compromise_Projections>,
-        <https://opengeospatial.github.io/req/projections/Conformal_Projections>,
-        <https://opengeospatial.github.io/req/projections/Conical_Projections>,
-        <https://opengeospatial.github.io/req/projections/Cylindrical_Projections>,
-        <https://opengeospatial.github.io/req/projections/Equal_Area_Projections>,
-        <https://opengeospatial.github.io/req/projections/Equidistant_Projections>,
-        <https://opengeospatial.github.io/req/projections/Globular_Projections>,
-        <https://opengeospatial.github.io/req/projections/Lenticular_Projections>,
-        <https://opengeospatial.github.io/req/projections/Minimum_Error_Projections>,
-        <https://opengeospatial.github.io/req/projections/Perspective_Projections>,
-        <https://opengeospatial.github.io/req/projections/Polyconic_Projections>,
-        <https://opengeospatial.github.io/req/projections/Polyhedral_Projections>,
-        <https://opengeospatial.github.io/req/projections/Projection>,
-        <https://opengeospatial.github.io/req/projections/Pseudo_Azimuthal_Projections>,
-        <https://opengeospatial.github.io/req/projections/Pseudo_Conical_Projections>,
-        <https://opengeospatial.github.io/req/projections/Pseudo_Cylindrical_Projections>,
-        <https://opengeospatial.github.io/req/projections/Stereographic_Projections> ;
-    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
+    modspec:requirementsClass <https://avillar.github.io/req/projections/Archaic_Projections>,
+        <https://avillar.github.io/req/projections/Azimuthal_Projections>,
+        <https://avillar.github.io/req/projections/Compromise_Projections>,
+        <https://avillar.github.io/req/projections/Conformal_Projections>,
+        <https://avillar.github.io/req/projections/Conical_Projections>,
+        <https://avillar.github.io/req/projections/Cylindrical_Projections>,
+        <https://avillar.github.io/req/projections/Equal_Area_Projections>,
+        <https://avillar.github.io/req/projections/Equidistant_Projections>,
+        <https://avillar.github.io/req/projections/Globular_Projections>,
+        <https://avillar.github.io/req/projections/Lenticular_Projections>,
+        <https://avillar.github.io/req/projections/Minimum_Error_Projections>,
+        <https://avillar.github.io/req/projections/Perspective_Projections>,
+        <https://avillar.github.io/req/projections/Polyconic_Projections>,
+        <https://avillar.github.io/req/projections/Polyhedral_Projections>,
+        <https://avillar.github.io/req/projections/Projection>,
+        <https://avillar.github.io/req/projections/Pseudo_Azimuthal_Projections>,
+        <https://avillar.github.io/req/projections/Pseudo_Conical_Projections>,
+        <https://avillar.github.io/req/projections/Pseudo_Cylindrical_Projections>,
+        <https://avillar.github.io/req/projections/Stereographic_Projections> ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Projection module" ;
-    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
     prof:hasResource [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
-            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/projection/ontology.ttl> ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/build/annotated/geosrs/projection/ontology.ttl> ;
             prof:hasRole role:specification ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<https://opengeospatial.github.io/ontology-crs/build/bblocks.ttl> a prov:Entity ;
+<bblocks://ogc.geosrs.requirements.alignments> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Clause ;
+    rdfs:label "Alignments" ;
+    dct:abstract "Namespaces of the ontologies the CRS ontology is aligned to."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/alignments/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/alignments/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.alignments> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-10-07"^^xsd:date ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
+    skos:prefLabel "Alignments" ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
+    dcat:keyword "clause",
+        "geosrs",
+        "standard" ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.geosrs.requirements.conventions> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Clause ;
+    rdfs:label "Conventions" ;
+    dct:abstract "Conventions used in the CRS ontology specification."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/conventions/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/conventions/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.conventions> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-10-07"^^xsd:date ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
+    skos:prefLabel "Conventions" ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
+    dcat:keyword "clause",
+        "geosrs",
+        "standard" ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.geosrs.requirements.instances> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Requirements-class ;
+    rdfs:label "Common Instances" ;
+    dct:abstract "Requirements class for the common instances (axis directions, spheroids, prime meridians, literal types) needed in CRS specifications."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/instances/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/instances/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.instances> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-10-07"^^xsd:date ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
+    skos:prefLabel "Common Instances" ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
+    dcat:keyword "geosrs",
+        "requirements-class",
+        "standard" ;
+    prof:hasResource [ dct:format "application/yaml" ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/_sources/requirements/instances/requirements.yaml> ;
+            prof:hasRole <https://avillar.github.io/requirements> ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.geosrs.requirements.jsonld-context> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Clause ;
+    rdfs:label "JSON-LD Context" ;
+    dct:abstract "JSON-LD contexts for compatibility with JSON-based CRS formats."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.jsonld-context> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/jsonld-context/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/jsonld-context/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-10-07"^^xsd:date ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
+    skos:prefLabel "JSON-LD Context" ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
+    dcat:keyword "clause",
+        "geosrs",
+        "standard" ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.geosrs.requirements.references> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:References ;
+    rdfs:label "Normative References" ;
+    dct:abstract "Normative references of the CRS ontology specification."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/references/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.references> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/references/index.json> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-10-07"^^xsd:date ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
+    skos:prefLabel "Normative References" ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
+    dcat:keyword "clause",
+        "geosrs",
+        "standard" ;
+    prof:hasResource [ dct:format "application/yaml" ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/_sources/requirements/references/references.yaml> ;
+            prof:hasRole <https://avillar.github.io/references> ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.geosrs.requirements.revision-history> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Clause ;
+    rdfs:label "Revision History" ;
+    dct:abstract "Revision history of the CRS ontology specification."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/revision-history/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/revision-history/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.revision-history> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-10-07"^^xsd:date ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
+    skos:prefLabel "Revision History" ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
+    dcat:keyword "clause",
+        "geosrs",
+        "standard" ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.geosrs.requirements.scope> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Clause ;
+    rdfs:label "Scope" ;
+    dct:abstract "Scope of the CRS ontology specification."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/scope/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/scope/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.scope> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-10-07"^^xsd:date ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
+    skos:prefLabel "Scope" ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
+    dcat:keyword "clause",
+        "geosrs",
+        "standard" ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.geosrs.requirements.shacl-shapes> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Clause ;
+    rdfs:label "SHACL Shapes" ;
+    dct:abstract "SHACL shapes to validate graphs that use the CRS ontology."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/shacl-shapes/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.shacl-shapes> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/shacl-shapes/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-10-07"^^xsd:date ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
+    skos:prefLabel "SHACL Shapes" ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
+    dcat:keyword "clause",
+        "geosrs",
+        "standard" ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.geosrs.requirements.terms> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Terms ;
+    rdfs:label "Terms and Definitions" ;
+    dct:abstract "Terms and definitions used in the CRS ontology specification."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.requirements.terms> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/requirements/terms/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/requirements/terms/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-10-07"^^xsd:date ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
+    skos:prefLabel "Terms and Definitions" ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
+    dcat:keyword "clause",
+        "geosrs",
+        "standard" ;
+    prof:hasResource [ dct:format "application/yaml" ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/_sources/requirements/terms/terms.yaml> ;
+            prof:hasRole <https://avillar.github.io/terms> ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://avillar.github.io/ontology-crs/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Naf5de3ff8742429aaac604af866f62a0 ;
+    prov:wasAttributedTo _:N9c3ffcd78a5d4e1ea84e74f4c4857460 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-07-21T13:18:51.722260"^^xsd:dateTime ;
-            prov:startedAtTime "2026-07-21T13:18:51.567525"^^xsd:dateTime ;
+            prov:endedAtTime "2026-10-07T16:40:07.083171"^^xsd:dateTime ;
+            prov:startedAtTime "2026-10-07T16:40:06.927146"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-                [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:e0061673dd6b207ff7fa4bdfd8dc28c697c98f56" ;
-                    rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs/build/register.json> ] ;
-            prov:wasAssociatedWith _:Naf5de3ff8742429aaac604af866f62a0 ] .
+                    dct:hasVersion "git:a8b27be9cb5e899802722740e7fb92ff7c5e8cb8" ;
+                    rdfs:seeAlso <https://avillar.github.io/ontology-crs/build/register.json> ],
+                [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            prov:wasAssociatedWith _:N9c3ffcd78a5d4e1ea84e74f4c4857460 ] .
 
 <https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#co> rdfs:label "Spec Section" .
 
@@ -182,34 +411,34 @@
     rdfs:label "SRS Ontology - Coordinate System module" ;
     dct:abstract "A building block defining SRS Ontology Coordinate System Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.cs> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/cs/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/cs/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/cs/index.json> ] ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/cs/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.cs> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-07-21"^^xsd:date ;
+    dct:modified "2026-10-07"^^xsd:date ;
     dct:source <https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#cs> ;
-    modspec:requirementsClass <https://opengeospatial.github.io/req/cs/3D_Coordinate_Systems>,
-        <https://opengeospatial.github.io/req/cs/Celestial_Coordinate_Systems>,
-        <https://opengeospatial.github.io/req/cs/Coordinate_System_Components>,
-        <https://opengeospatial.github.io/req/cs/Coordinate_System_Properties>,
-        <https://opengeospatial.github.io/req/cs/Coordinate_System_Types>,
-        <https://opengeospatial.github.io/req/cs/Temporal_Coordinate_Systems> ;
-    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
+    modspec:requirementsClass <https://avillar.github.io/req/cs/3D_Coordinate_Systems>,
+        <https://avillar.github.io/req/cs/Celestial_Coordinate_Systems>,
+        <https://avillar.github.io/req/cs/Coordinate_System_Components>,
+        <https://avillar.github.io/req/cs/Coordinate_System_Properties>,
+        <https://avillar.github.io/req/cs/Coordinate_System_Types>,
+        <https://avillar.github.io/req/cs/Temporal_Coordinate_Systems> ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Coordinate System module" ;
-    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
-    prof:hasResource [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/cs/ontology.ttl> ;
-            prof:hasRole role:specification ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geosrs.cs> ;
-            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/_sources/cs/rules.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/_sources/cs/rules.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/build/annotated/geosrs/cs/ontology.ttl> ;
+            prof:hasRole role:specification ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed false .
@@ -221,33 +450,33 @@
     rdfs:label "SRS Ontology - Datum module" ;
     dct:abstract "A building block defining SRS Ontology Datum Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.datum> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/datum/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/datum/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/datum/index.md> ] ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/datum/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.datum> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-07-21"^^xsd:date ;
+    dct:modified "2026-10-07"^^xsd:date ;
     dct:source <https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#datum> ;
-    modspec:requirementsClass <https://opengeospatial.github.io/req/datum/Datum_Parameters>,
-        <https://opengeospatial.github.io/req/datum/Datum_Properties>,
-        <https://opengeospatial.github.io/req/datum/Datum_Types>,
-        <https://opengeospatial.github.io/req/datum/Spheroid_Properties>,
-        <https://opengeospatial.github.io/req/datum/Spheroid_Types> ;
-    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
+    modspec:requirementsClass <https://avillar.github.io/req/datum/Datum_Parameters>,
+        <https://avillar.github.io/req/datum/Datum_Properties>,
+        <https://avillar.github.io/req/datum/Datum_Types>,
+        <https://avillar.github.io/req/datum/Spheroid_Properties>,
+        <https://avillar.github.io/req/datum/Spheroid_Types> ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Datum module" ;
-    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
-    prof:hasResource [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/datum/ontology.ttl> ;
-            prof:hasRole role:specification ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geosrs.datum> ;
-            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/_sources/datum/rules.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/_sources/datum/rules.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/build/annotated/geosrs/datum/ontology.ttl> ;
+            prof:hasRole role:specification ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed false .
@@ -259,33 +488,33 @@
     rdfs:label "SRS Core Ontology" ;
     dct:abstract "A building block defining the SRS Core Ontology"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/srs/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/json-full/geosrs/srs/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/build/generateddocs/markdown/geosrs/srs/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.srs> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/srs/index.json> ] ;
+            rdfs:isDefinedBy <https://avillar.github.io/ontology-crs/bblocks/bblock/ogc.geosrs.srs> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-07-21"^^xsd:date ;
+    dct:modified "2026-10-07"^^xsd:date ;
     dct:source <https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#core> ;
-    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:inScheme <https://avillar.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Core Ontology" ;
-    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:topConceptOf <https://avillar.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
     prof:hasResource [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
-            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/srs/ontology.ttl> ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/build/annotated/geosrs/srs/ontology.ttl> ;
             prof:hasRole role:specification ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geosrs.srs> ;
-            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/_sources/srs/rules.shacl> ;
+            prof:hasArtifact <https://avillar.github.io/ontology-crs/_sources/srs/rules.shacl> ;
             prof:hasRole role:validation ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed false .
 
-<https://opengeospatial.github.io/ontology-crs/> a skos:ConceptScheme,
+<https://avillar.github.io/ontology-crs/> a skos:ConceptScheme,
         dcat:Catalog,
         bblocks:BBlocksRegister ;
     rdfs:label "Building Blocks - SRS Ontology" ;
@@ -298,7 +527,7 @@ Each fragment allows for transparent and validatable use of JSON-LD contexts to 
 
  Each building block allows for examples transformed to RDF, which in turn allows for the use of SHACL rules to enforce the semantics of the GeoSPARQL specifications.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-07-21T13:18:50.982513"^^xsd:dateTime ;
+    dct:modified "2026-10-07T16:39:57.793291"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://ogc.geosrs.app>,
         <bblocks://ogc.geosrs.co>,
@@ -306,26 +535,35 @@ Each fragment allows for transparent and validatable use of JSON-LD contexts to 
         <bblocks://ogc.geosrs.datum>,
         <bblocks://ogc.geosrs.planet>,
         <bblocks://ogc.geosrs.projection>,
+        <bblocks://ogc.geosrs.requirements.alignments>,
+        <bblocks://ogc.geosrs.requirements.conventions>,
+        <bblocks://ogc.geosrs.requirements.instances>,
+        <bblocks://ogc.geosrs.requirements.jsonld-context>,
+        <bblocks://ogc.geosrs.requirements.references>,
+        <bblocks://ogc.geosrs.requirements.revision-history>,
+        <bblocks://ogc.geosrs.requirements.scope>,
+        <bblocks://ogc.geosrs.requirements.shacl-shapes>,
+        <bblocks://ogc.geosrs.requirements.terms>,
         <bblocks://ogc.geosrs.srs> ;
     skos:prefLabel "Building Blocks - SRS Ontology" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
-            dct:type "application/ld+json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://opengeospatial.github.io/ontology-crs/build/bblocks.jsonld> ],
-        [ rdfs:label "This Building Blocks Register in JSON format" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
             ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://opengeospatial.github.io/ontology-crs/build/register.json> ],
+            ns1:hasTarget <https://avillar.github.io/ontology-crs/build/register.json> ],
         [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
             dct:type "text/turtle" ;
             ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://opengeospatial.github.io/ontology-crs/build/bblocks.ttl> ] ;
-    foaf:homepage <https://opengeospatial.github.io/ontology-crs/bblocks/> ;
-    bblocks:hasValidationReport <https://opengeospatial.github.io/ontology-crs/build/tests/report.html> .
+            ns1:hasTarget <https://avillar.github.io/ontology-crs/build/bblocks.ttl> ],
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://avillar.github.io/ontology-crs/build/bblocks.jsonld> ] ;
+    foaf:homepage <https://avillar.github.io/ontology-crs/bblocks> ;
+    bblocks:hasValidationReport <https://avillar.github.io/ontology-crs/build/tests/report.html> .
 
-_:Naf5de3ff8742429aaac604af866f62a0 a prov:Agent,
+_:N9c3ffcd78a5d4e1ea84e74f4c4857460 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.5.31" ;
+    dct:hasVersion "0.5.35" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 

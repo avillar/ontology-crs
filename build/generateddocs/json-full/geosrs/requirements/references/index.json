@@ -1,0 +1,31 @@
+
+
+{
+  "itemIdentifier": "ogc.geosrs.requirements.references",
+  "name": "Normative References",
+  "abstract": "Normative references of the CRS ontology specification.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "references",
+  "version": "0.1",
+  "normative": true,
+  "tags": [
+    "geosrs",
+    "standard",
+    "clause"
+  ],
+  "resources": [
+    {
+      "ref": "https://avillar.github.io/ontology-crs/_sources/requirements/references/references.yaml",
+      "role": "references",
+      "format": "application/yaml"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-10-07",
+  "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/references/",
+  "validationPassed": true,
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/avillar/ontology-crs",
+  "gitPath": "_sources/requirements/references"
+}

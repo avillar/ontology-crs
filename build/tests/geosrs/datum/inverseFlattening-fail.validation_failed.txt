@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.datum - SRS Ontology - Datum module
-Generated 2026-07-21T13:18:51.476674+00:00
+Generated 2026-10-07T16:40:06.713722+00:00
 === General ===
 
 ** Validation error **
@@ -11,18 +11,20 @@ Using inverseFlattening-fail.ttl from test resources
 === End Files ===
 
 === SHACL ===
+Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/datum/ontology.ttl
 Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
 
 === End SHACL ===
 

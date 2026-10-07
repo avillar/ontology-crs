@@ -15,7 +15,8 @@ This module describes how to model an SRS application entity using the SRS ontol
 
 SRS Application classes and properties are described under the namespace https://w3id.org/geosrs/application/
 
-![SRS Ontology Application Module](assets/application.png)
+![SRS Ontology Application Module](assets/application.svg)
+
 ## Examples
 
 ### SRS Ontology SRS Application Module Example
@@ -41,6 +42,6 @@ exsrs:mysrs geosrs_app:usage exsrs:mysrsapp .
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/ontology-crs](https://github.com/opengeospatial/ontology-crs)
+* URL: [https://github.com/avillar/ontology-crs](https://github.com/avillar/ontology-crs)
 * Path: `_sources/app`
 

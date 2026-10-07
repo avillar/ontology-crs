@@ -1,0 +1,33 @@
+
+
+{
+  "itemIdentifier": "ogc.geosrs.requirements.instances",
+  "name": "Common Instances",
+  "abstract": "Requirements class for the common instances (axis directions, spheroids, prime meridians, literal types) needed in CRS specifications.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "requirements-class",
+  "version": "0.1",
+  "normative": true,
+  "tags": [
+    "geosrs",
+    "standard",
+    "requirements-class"
+  ],
+  "standardization-target": "RDF vocabulary",
+  "resources": [
+    {
+      "ref": "https://avillar.github.io/ontology-crs/_sources/requirements/instances/requirements.yaml",
+      "role": "requirements",
+      "format": "application/yaml"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-10-07",
+  "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/instances/",
+  "validationPassed": true,
+  "description": "This clause establishes common instances which are needed in CRS specifications: coordinate system axis directions, spheroids, prime meridians and the SRS literal types.\n",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/avillar/ontology-crs",
+  "gitPath": "_sources/requirements/instances"
+}

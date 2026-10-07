@@ -1,0 +1,117 @@
+{
+  "standard": "crs-ontology",
+  "blocks": [
+    {
+      "bblock": "ogc.geosrs.requirements.scope",
+      "itemClass": "clause",
+      "role": "prose",
+      "reason": "no requirements.yaml",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.requirements.references",
+      "itemClass": "references",
+      "role": "references",
+      "reason": "itemClass 'references'",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.requirements.terms",
+      "itemClass": "terms",
+      "role": "terms",
+      "reason": "itemClass 'terms'",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.requirements.conventions",
+      "itemClass": "clause",
+      "role": "prose",
+      "reason": "no requirements.yaml",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.srs",
+      "itemClass": "model",
+      "role": "requirements-class",
+      "reason": "requirements.yaml found",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.co",
+      "itemClass": "model",
+      "role": "requirements-class",
+      "reason": "requirements.yaml found",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.cs",
+      "itemClass": "model",
+      "role": "requirements-class",
+      "reason": "requirements.yaml found",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.datum",
+      "itemClass": "model",
+      "role": "requirements-class",
+      "reason": "requirements.yaml found",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.app",
+      "itemClass": "model",
+      "role": "requirements-class",
+      "reason": "requirements.yaml found",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.projection",
+      "itemClass": "model",
+      "role": "requirements-class",
+      "reason": "requirements.yaml found",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.planet",
+      "itemClass": "model",
+      "role": "requirements-class",
+      "reason": "requirements.yaml found",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.requirements.instances",
+      "itemClass": "requirements-class",
+      "role": "requirements-class",
+      "reason": "requirements.yaml found",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.requirements.alignments",
+      "itemClass": "clause",
+      "role": "prose",
+      "reason": "no requirements.yaml",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.requirements.shacl-shapes",
+      "itemClass": "clause",
+      "role": "prose",
+      "reason": "no requirements.yaml",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.requirements.jsonld-context",
+      "itemClass": "clause",
+      "role": "prose",
+      "reason": "no requirements.yaml",
+      "loaded": true
+    },
+    {
+      "bblock": "ogc.geosrs.requirements.revision-history",
+      "itemClass": "clause",
+      "role": "prose",
+      "reason": "no requirements.yaml",
+      "loaded": true
+    }
+  ]
+}

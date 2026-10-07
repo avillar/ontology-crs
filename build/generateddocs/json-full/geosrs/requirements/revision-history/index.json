@@ -1,0 +1,25 @@
+
+
+{
+  "itemIdentifier": "ogc.geosrs.requirements.revision-history",
+  "name": "Revision History",
+  "abstract": "Revision history of the CRS ontology specification.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "clause",
+  "version": "0.1",
+  "normative": false,
+  "tags": [
+    "geosrs",
+    "standard",
+    "clause"
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-10-07",
+  "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/revision-history/",
+  "validationPassed": true,
+  "description": "| Date | Release | Author | Primary clauses modified | Description |\n|---|---|---|---|---|\n| 2016-04-28 | 0.1 | G. Editor | all | initial version |\n",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/avillar/ontology-crs",
+  "gitPath": "_sources/requirements/revision-history"
+}

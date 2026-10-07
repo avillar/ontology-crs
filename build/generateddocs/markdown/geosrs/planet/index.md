@@ -15,7 +15,8 @@ This module describes how to model a planetary entity using the SRS ontology voc
 
 Planet classes and properties are described under the namespace https://w3id.org/geosrs/planet/
 
-![SRS Ontology Planet Module](assets/planet.png)
+![SRS Ontology Planet Module](assets/planet.svg)
+
 ## Examples
 
 ### SRS Ontology Planet Module Example
@@ -43,6 +44,6 @@ exsrs:myplanet rdf:type geosrs_planet:Planet ;
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/ontology-crs](https://github.com/opengeospatial/ontology-crs)
+* URL: [https://github.com/avillar/ontology-crs](https://github.com/avillar/ontology-crs)
 * Path: `_sources/planet`
 

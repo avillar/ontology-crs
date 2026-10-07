@@ -1,0 +1,31 @@
+
+
+{
+  "itemIdentifier": "ogc.geosrs.requirements.terms",
+  "name": "Terms and Definitions",
+  "abstract": "Terms and definitions used in the CRS ontology specification.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "terms",
+  "version": "0.1",
+  "normative": true,
+  "tags": [
+    "geosrs",
+    "standard",
+    "clause"
+  ],
+  "resources": [
+    {
+      "ref": "https://avillar.github.io/ontology-crs/_sources/requirements/terms/terms.yaml",
+      "role": "terms",
+      "format": "application/yaml"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-10-07",
+  "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/terms/",
+  "validationPassed": true,
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/avillar/ontology-crs",
+  "gitPath": "_sources/requirements/terms"
+}

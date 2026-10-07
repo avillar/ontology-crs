@@ -11,7 +11,7 @@
   "itemClass": "model",
   "register": "geosrs",
   "version": "0.1",
-  "dateOfLastChange": "2026-07-21",
+  "dateOfLastChange": "2026-10-07",
   "sources": [
     {
       "title": "Spec Section",
@@ -24,18 +24,19 @@
     "geosrs"
   ],
   "shaclShapes": {},
-  "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/app/",
+  "ontology": "https://avillar.github.io/ontology-crs/build/annotated/geosrs/app/ontology.ttl",
+  "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/app/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/app/",
-  "description": "## SRS Ontology Application Module\n\nThis module describes how to model an SRS application entity using the SRS ontology vocabulary.\n\nSRS Application classes and properties are described under the namespace https://w3id.org/geosrs/application/\n\n![SRS Ontology Application Module](assets/application.png)",
+  "testOutputs": "https://github.com/avillar/ontology-crs/blob/master/build/tests/geosrs/app/",
+  "description": "## SRS Ontology Application Module\n\nThis module describes how to model an SRS application entity using the SRS ontology vocabulary.\n\nSRS Application classes and properties are described under the namespace https://w3id.org/geosrs/application/\n\n![SRS Ontology Application Module](assets/application.svg)\n",
   "examples": [
     {
       "title": "SRS Ontology SRS Application Module Example",
       "snippets": [
         {
           "language": "ttl",
-          "ref": "https://opengeospatial.github.io/ontology-crs/_sources/app/examples/application.ttl",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/app/example_1_1.ttl",
+          "ref": "https://avillar.github.io/ontology-crs/_sources/app/examples/application.ttl",
+          "url": "https://avillar.github.io/ontology-crs/build/tests/geosrs/app/example_1_1.ttl",
           "sizeBytes": 378,
           "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_app:<https://w3id.org/geosrs/application/> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mysrsapp rdf:type geosrs_app:Hydrology .\nexsrs:mysrsapp rdfs:label \"watering my garden\"@en .\n\nexsrs:mysrs geosrs_app:usage exsrs:mysrsapp .\n"
         }
@@ -49,6 +50,6 @@
     "mynamespace": "https://w3id.org/example-data-srs#"
   },
   "annotatedSchema": null,
-  "gitRepository": "https://github.com/opengeospatial/ontology-crs",
+  "gitRepository": "https://github.com/avillar/ontology-crs",
   "gitPath": "_sources/app"
 }

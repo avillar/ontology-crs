@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geosrs.datum - SRS Ontology - Datum module",
   "bblockName": "SRS Ontology - Datum module",
   "bblockId": "ogc.geosrs.datum",
-  "generated": "2026-07-21T13:18:51.492323+00:00",
+  "generated": "2026-10-07T16:40:06.747792+00:00",
   "result": false,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "TEST_RESOURCE",
         "requireFail": true,
         "filename": "_sources/datum/tests/inverseFlattening-fail.ttl",
-        "url": "https://opengeospatial.github.io/ontology-crs/_sources/datum/tests/inverseFlattening-fail.ttl",
+        "url": "https://avillar.github.io/ontology-crs/_sources/datum/tests/inverseFlattening-fail.ttl",
         "language": "ttl"
       },
       "result": false,
@@ -41,6 +41,10 @@
           "title": "SHACL",
           "entries": [
             {
+              "isError": false,
+              "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/datum/ontology.ttl"
+            },
+            {
               "op": "shacl-report",
               "shaclFile": "_sources/datum/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
@@ -50,30 +54,30 @@
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                "geosrs:Datum_primeMeridian_Shape": {
                   "nodes": []
                 },
-                "geosrs:Ellipsoid_semiMajorAxis_Shape": {
+                "geosrs:Datum_ellipsoid_Shape": {
                   "nodes": []
                 },
                 "geosrs:ParametricDatum_definingParameter_Shape": {
                   "nodes": []
                 },
-                "geosrs:Datum_primeMeridian_Shape": {
+                "geosrs:Ellipsoid_eccentricity_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_semiMajorAxis_Shape": {
                   "nodes": []
                 },
                 "geosrs:Ellipsoid_inverseFlattening_Shape": {
                   "nodes": []
                 },
-                "geosrs:Ellipsoid_eccentricity_Shape": {
-                  "nodes": []
-                },
-                "geosrs:Datum_ellipsoid_Shape": {
+                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
             }
           ]
         }
@@ -84,7 +88,7 @@
         "type": "TEST_RESOURCE",
         "requireFail": false,
         "filename": "_sources/datum/tests/inverseFlattening.ttl",
-        "url": "https://opengeospatial.github.io/ontology-crs/_sources/datum/tests/inverseFlattening.ttl",
+        "url": "https://avillar.github.io/ontology-crs/_sources/datum/tests/inverseFlattening.ttl",
         "language": "ttl"
       },
       "result": true,
@@ -104,6 +108,10 @@
           "title": "SHACL",
           "entries": [
             {
+              "isError": false,
+              "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/datum/ontology.ttl"
+            },
+            {
               "op": "shacl-report",
               "shaclFile": "_sources/datum/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
@@ -113,30 +121,30 @@
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                "geosrs:Datum_primeMeridian_Shape": {
                   "nodes": []
                 },
-                "geosrs:Ellipsoid_semiMajorAxis_Shape": {
+                "geosrs:Datum_ellipsoid_Shape": {
                   "nodes": []
                 },
                 "geosrs:ParametricDatum_definingParameter_Shape": {
                   "nodes": []
                 },
-                "geosrs:Datum_primeMeridian_Shape": {
+                "geosrs:Ellipsoid_eccentricity_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_semiMajorAxis_Shape": {
                   "nodes": []
                 },
                 "geosrs:Ellipsoid_inverseFlattening_Shape": {
                   "nodes": []
                 },
-                "geosrs:Ellipsoid_eccentricity_Shape": {
-                  "nodes": []
-                },
-                "geosrs:Datum_ellipsoid_Shape": {
+                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
             }
           ]
         }
@@ -147,7 +155,7 @@
         "type": "TEST_RESOURCE",
         "requireFail": true,
         "filename": "_sources/datum/tests/semiMajorAxis-fail.ttl",
-        "url": "https://opengeospatial.github.io/ontology-crs/_sources/datum/tests/semiMajorAxis-fail.ttl",
+        "url": "https://avillar.github.io/ontology-crs/_sources/datum/tests/semiMajorAxis-fail.ttl",
         "language": "ttl"
       },
       "result": false,
@@ -178,6 +186,10 @@
           "title": "SHACL",
           "entries": [
             {
+              "isError": false,
+              "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/datum/ontology.ttl"
+            },
+            {
               "op": "shacl-report",
               "shaclFile": "_sources/datum/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
@@ -187,30 +199,30 @@
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                "geosrs:Datum_primeMeridian_Shape": {
                   "nodes": []
                 },
-                "geosrs:Ellipsoid_semiMajorAxis_Shape": {
+                "geosrs:Datum_ellipsoid_Shape": {
                   "nodes": []
                 },
                 "geosrs:ParametricDatum_definingParameter_Shape": {
                   "nodes": []
                 },
-                "geosrs:Datum_primeMeridian_Shape": {
+                "geosrs:Ellipsoid_eccentricity_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_semiMajorAxis_Shape": {
                   "nodes": []
                 },
                 "geosrs:Ellipsoid_inverseFlattening_Shape": {
                   "nodes": []
                 },
-                "geosrs:Ellipsoid_eccentricity_Shape": {
-                  "nodes": []
-                },
-                "geosrs:Datum_ellipsoid_Shape": {
+                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
             }
           ]
         }
@@ -221,7 +233,7 @@
         "type": "TEST_RESOURCE",
         "requireFail": false,
         "filename": "_sources/datum/tests/semiMajorAxis.ttl",
-        "url": "https://opengeospatial.github.io/ontology-crs/_sources/datum/tests/semiMajorAxis.ttl",
+        "url": "https://avillar.github.io/ontology-crs/_sources/datum/tests/semiMajorAxis.ttl",
         "language": "ttl"
       },
       "result": true,
@@ -241,6 +253,10 @@
           "title": "SHACL",
           "entries": [
             {
+              "isError": false,
+              "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/datum/ontology.ttl"
+            },
+            {
               "op": "shacl-report",
               "shaclFile": "_sources/datum/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
@@ -250,30 +266,30 @@
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                "geosrs:Datum_primeMeridian_Shape": {
                   "nodes": []
                 },
-                "geosrs:Ellipsoid_semiMajorAxis_Shape": {
+                "geosrs:Datum_ellipsoid_Shape": {
                   "nodes": []
                 },
                 "geosrs:ParametricDatum_definingParameter_Shape": {
                   "nodes": []
                 },
-                "geosrs:Datum_primeMeridian_Shape": {
+                "geosrs:Ellipsoid_eccentricity_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_semiMajorAxis_Shape": {
                   "nodes": []
                 },
                 "geosrs:Ellipsoid_inverseFlattening_Shape": {
                   "nodes": []
                 },
-                "geosrs:Ellipsoid_eccentricity_Shape": {
-                  "nodes": []
-                },
-                "geosrs:Datum_ellipsoid_Shape": {
+                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
             }
           ]
         }
@@ -284,7 +300,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/geosrs/datum/example_1_1.ttl",
-        "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/datum/example_1_1.ttl",
+        "url": "https://avillar.github.io/ontology-crs/build/tests/geosrs/datum/example_1_1.ttl",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "text/turtle"
@@ -324,6 +340,10 @@
           "title": "SHACL",
           "entries": [
             {
+              "isError": false,
+              "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/datum/ontology.ttl"
+            },
+            {
               "op": "shacl-report",
               "shaclFile": "_sources/datum/rules.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
@@ -333,30 +353,30 @@
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                "geosrs:Datum_primeMeridian_Shape": {
                   "nodes": []
                 },
-                "geosrs:Ellipsoid_semiMajorAxis_Shape": {
+                "geosrs:Datum_ellipsoid_Shape": {
                   "nodes": []
                 },
                 "geosrs:ParametricDatum_definingParameter_Shape": {
                   "nodes": []
                 },
-                "geosrs:Datum_primeMeridian_Shape": {
+                "geosrs:Ellipsoid_eccentricity_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_semiMajorAxis_Shape": {
                   "nodes": []
                 },
                 "geosrs:Ellipsoid_inverseFlattening_Shape": {
                   "nodes": []
                 },
-                "geosrs:Ellipsoid_eccentricity_Shape": {
-                  "nodes": []
-                },
-                "geosrs:Datum_ellipsoid_Shape": {
+                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
             }
           ]
         }

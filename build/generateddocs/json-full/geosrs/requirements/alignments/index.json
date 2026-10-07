@@ -1,0 +1,25 @@
+
+
+{
+  "itemIdentifier": "ogc.geosrs.requirements.alignments",
+  "name": "Alignments",
+  "abstract": "Namespaces of the ontologies the CRS ontology is aligned to.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "clause",
+  "version": "0.1",
+  "normative": false,
+  "tags": [
+    "geosrs",
+    "standard",
+    "clause"
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-10-07",
+  "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/alignments/",
+  "validationPassed": true,
+  "description": "The prefixes used for the ontologies mapped to in the alignments are given in the following table.\n\n| Prefix | Namespace |\n|---|---|\n| `ign:` | `http://data.ign.fr/def/ignf#` |\n| `iso19111:` | `http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#` |\n| `geosrs:` | `http://www.opengis.net/ont/geosparql#` |\n| `ifc:` | `https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/` |\n| `owl:` | `http://www.w3.org/2002/07/owl#` |\n| `prov:` | `http://www.w3.org/ns/prov#` |\n| `rdf:` | `http://www.w3.org/1999/02/22-rdf-syntax-ns#` |\n| `rdfs:` | `http://www.w3.org/2000/01/rdf-schema#` |\n",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/avillar/ontology-crs",
+  "gitPath": "_sources/requirements/alignments"
+}

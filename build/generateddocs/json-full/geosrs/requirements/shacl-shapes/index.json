@@ -1,0 +1,25 @@
+
+
+{
+  "itemIdentifier": "ogc.geosrs.requirements.shacl-shapes",
+  "name": "SHACL Shapes",
+  "abstract": "SHACL shapes to validate graphs that use the CRS ontology.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "clause",
+  "version": "0.1",
+  "normative": false,
+  "tags": [
+    "geosrs",
+    "standard",
+    "clause"
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-10-07",
+  "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/requirements/shacl-shapes/",
+  "validationPassed": true,
+  "description": "This annex introduces SHACL shapes which can be used to verify graphs encoded using the vocabulary defined in this specification.\n\nSHACL shapes in this specification are subdivided by the same module designations as used previously. They are published with the corresponding module's building block (`rules.shacl`).\n",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/avillar/ontology-crs",
+  "gitPath": "_sources/requirements/shacl-shapes"
+}

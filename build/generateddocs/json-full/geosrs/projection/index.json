@@ -32,7 +32,7 @@
     "/req/projections/Stereographic_Projections"
   ],
   "version": "0.1",
-  "dateOfLastChange": "2026-07-21",
+  "dateOfLastChange": "2026-10-07",
   "sources": [
     {
       "title": "Spec Section",
@@ -45,19 +45,19 @@
     "geosrs"
   ],
   "shaclShapes": {},
-  "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/projection/ontology.ttl",
-  "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/projection/",
+  "ontology": "https://avillar.github.io/ontology-crs/build/annotated/geosrs/projection/ontology.ttl",
+  "sourceFiles": "https://avillar.github.io/ontology-crs/_sources/projection/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/projection/",
-  "description": "## SRS Ontology Coordinate System Module\n\nThis module describes how to model a projection system using the SRS ontology vocabulary.\n\nProjection classes and properties are described under the namespace https://w3id.org/geosrs/projection/\n\n![SRS Ontology Projection Module](assets/projection.png)\n\n\n\n",
+  "testOutputs": "https://github.com/avillar/ontology-crs/blob/master/build/tests/geosrs/projection/",
+  "description": "## SRS Ontology Projection Module\n\nThis module describes how to model a projection system using the SRS ontology vocabulary.\n\nProjection classes and properties are described under the namespace https://w3id.org/geosrs/projection/\n\n![SRS Ontology Projection Module](assets/projection.svg)\n\nA map projection is a specific set of transformations which are used to represent the two-dimensional surface of a globe on a map plane. All map projections are therefore specific coordinate transformations in the sense of the coordinate operation module.\n\nThis module does not describe the specific parameters of a map projection because many variants of a map projection with different parameter usage might exist. Rather we describe the classes to specify the type of projection. Parameter values of the projection type will have to be initialized when instances of the projection class are created.\n",
   "examples": [
     {
       "title": "SRS Ontology Projection Module Example",
       "snippets": [
         {
           "language": "ttl",
-          "ref": "https://opengeospatial.github.io/ontology-crs/_sources/projection/examples/projection.ttl",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/projection/example_1_1.ttl",
+          "ref": "https://avillar.github.io/ontology-crs/_sources/projection/examples/projection.ttl",
+          "url": "https://avillar.github.io/ontology-crs/build/tests/geosrs/projection/example_1_1.ttl",
           "sizeBytes": 409,
           "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_proj:<https://w3id.org/geosrs/projection#> .\n@prefix geosrs:<https://w3id.org/geosrs/> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mysrs rdf:type geosrs:GeodeticCRS ;\n            geosrs:conversion exsrs:myproj .\nexsrs:myproj rdf:type geosrs_proj:Projection ."
         }
@@ -71,6 +71,6 @@
     "mynamespace": "https://w3id.org/example-data-srs#"
   },
   "annotatedSchema": null,
-  "gitRepository": "https://github.com/opengeospatial/ontology-crs",
+  "gitRepository": "https://github.com/avillar/ontology-crs",
   "gitPath": "_sources/projection"
 }

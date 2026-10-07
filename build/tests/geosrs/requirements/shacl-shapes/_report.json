@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.geosrs.requirements.shacl-shapes - SHACL Shapes",
+  "bblockName": "SHACL Shapes",
+  "bblockId": "ogc.geosrs.requirements.shacl-shapes",
+  "generated": "2026-10-07T16:40:06.786565+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

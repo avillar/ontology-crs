@@ -17,8 +17,7 @@ Coordinate system classes and properties are described under the namespace https
 
 ![SRS Ontology Coordinate System Module](assets/cs.png)
 
-
-
+The coordinate system module introduces different types of coordinate systems which are distinguished in geospatial science and applications. Coordinate systems are distinguished by their area of use, i.e. planetary or interstellar, and by their dimensionality.
 
 ## Examples
 
@@ -84,6 +83,6 @@ exsrs:ecsc_axis2 rdf:type geosrs_cs:Axis ;
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/ontology-crs](https://github.com/opengeospatial/ontology-crs)
+* URL: [https://github.com/avillar/ontology-crs](https://github.com/avillar/ontology-crs)
 * Path: `_sources/cs`
 

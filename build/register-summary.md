@@ -49,6 +49,60 @@ A building block defining SRS Ontology Planet Module
 
 A building block defining SRS Ontology Projection Module
 
+### `ogc.geosrs.requirements.alignments` — Alignments
+
+**Type:** clause
+
+Namespaces of the ontologies the CRS ontology is aligned to.
+
+### `ogc.geosrs.requirements.conventions` — Conventions
+
+**Type:** clause
+
+Conventions used in the CRS ontology specification.
+
+### `ogc.geosrs.requirements.instances` — Common Instances
+
+**Type:** requirements-class
+
+Requirements class for the common instances (axis directions, spheroids, prime meridians, literal types) needed in CRS specifications.
+
+### `ogc.geosrs.requirements.jsonld-context` — JSON-LD Context
+
+**Type:** clause
+
+JSON-LD contexts for compatibility with JSON-based CRS formats.
+
+### `ogc.geosrs.requirements.references` — Normative References
+
+**Type:** references
+
+Normative references of the CRS ontology specification.
+
+### `ogc.geosrs.requirements.revision-history` — Revision History
+
+**Type:** clause
+
+Revision history of the CRS ontology specification.
+
+### `ogc.geosrs.requirements.scope` — Scope
+
+**Type:** clause
+
+Scope of the CRS ontology specification.
+
+### `ogc.geosrs.requirements.shacl-shapes` — SHACL Shapes
+
+**Type:** clause
+
+SHACL shapes to validate graphs that use the CRS ontology.
+
+### `ogc.geosrs.requirements.terms` — Terms and Definitions
+
+**Type:** terms
+
+Terms and definitions used in the CRS ontology specification.
+
 ### `ogc.geosrs.srs` — SRS Core Ontology
 
 **Type:** model
