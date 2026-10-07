@@ -1,9 +1,17 @@
 name: Ontology Documentation CI
 
 on: 
+  workflow_dispatch:
   push: 
       branches: 
           - master 
+
+# Reusable workflows below can only use the permissions granted here; with the
+# default read-only token the run fails at startup.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:  
   
