@@ -1,0 +1,3 @@
+| Date | Release | Author | Primary clauses modified | Description |
+|---|---|---|---|---|
+| 2016-04-28 | 0.1 | G. Editor | all | initial version |

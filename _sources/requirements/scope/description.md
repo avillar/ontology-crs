@@ -1,3 +1,5 @@
+\<Insert Scope text here\>
+
 This specification results from a joint effort between the [Spatio-temporal Data on the Web Working Group](https://www.w3.org/groups/wg/sdw/) (SDWWG) of the W3C and the [GeoSemantics DWG](https://github.com/opengeospatial/geosemantics-dwg) of the OGC. It is meant to provide a workable Semantic Web counterpart to the [ISO 19111](https://www.iso.org/standard/74039.html) domain model, in order to represent coordinate reference systems (CRS) with the Resource Description Framework (RDF).
 
 The CRS web ontology is meant to support all kinds of data that use numerical spatial coordinates, in one, two or three spatial dimensions. It should be applicable irrespective of location, scale or datum. It may comprise coordinates relative to the Earth, Mars, the solar system, an archaeological site, a book page, or a computer screen.
@@ -5,3 +7,5 @@ The CRS web ontology is meant to support all kinds of data that use numerical sp
 This specification is complementary to [GeoSPARQL](https://www.ogc.org/standard/geosparql/), arguably the most important standard for spatial data on the Web. GeoSPARQL offers a paradigm to encode and exchange geometries, but it does not include CRS semantics, thus consigning such information to literals.
 
 Formal CRS semantics lends GeoSPARQL means to declare and exchange reference systems with precision. It also facilitates the wholesale assignment of CRS information to collections of geometries, and other kinds of literals, abridging redundancies. Moreover, a CRS ontology paves the way for a web-based CRS catalogue, providing a persistent reference to any geospatial software.
+
+> **NOTE** Give the subject of the document and the aspects of that scope covered by the document.

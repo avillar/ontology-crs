@@ -57,3 +57,4 @@ standards:
       - ogc.geosrs.requirements.alignments
       - ogc.geosrs.requirements.shacl-shapes
       - ogc.geosrs.requirements.jsonld-context
+      - ogc.geosrs.requirements.revision-history

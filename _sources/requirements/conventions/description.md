@@ -1,3 +1,5 @@
+> **NOTE** This section provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
+
 ## Identifiers
 
 The normative provisions in this standard are denoted by the URI
@@ -9,3 +11,7 @@ All requirements and conformance tests that appear in this document are denoted 
 ## Namespaces
 
 The suggested prefix for the namespace of the core terms, `https://w3id.org/geosrs/`, is `geosrs`. Each module defines its terms under its own namespace, `https://w3id.org/geosrs/<module>/`, with the suggested prefix `geosrs_<module>`.
+
+## Other conventions
+
+\<Place any other convention needed with its corresponding title\>

@@ -7,3 +7,40 @@ normative:
     doc-id: SPARQLSERVDESC
     uri: https://www.w3.org/TR/sparql11-service-description/
     date: "2013"
+  - title: "Identification of Common Molecular Subsequences. Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195–197 (1981)"
+    doc-id: Smith81
+    date: "1981"
+  - title: "ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services. May, P., Ehrlich, H.C., Steinke, T. In: Euro-Par 2006. LNCS, vol. 4128, pp. 1148–1158. Springer, Heidelberg (2006)"
+    doc-id: May06
+    date: "2006"
+  - title: "The Grid: Blueprint for a New Computing Infrastructure. Foster, I., Kesselman, C. Morgan Kaufmann, San Francisco (1999)"
+    doc-id: Grid
+    date: "1999"
+  - title: "Grid Information Services for Distributed Resource Sharing. Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)"
+    doc-id: Czajkowski01
+    date: "2001"
+informative:
+  - title: "YAML Ain't Markup Language. Ben-Kiki, O., Evans, C., Ingy döt Net"
+    doc-id: YAML
+    uri: https://yaml.org/
+  - title: "IETF RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax. Berners-Lee, T., Fielding, R., Masinter, L."
+    doc-id: RFC3986
+    uri: http://tools.ietf.org/rfc/rfc3986.txt
+  - title: "Link Relation Types. IANA"
+    doc-id: Link Relation Types
+    uri: https://www.iana.org/assignments/link-relations/link-relations.xml
+  - title: "ISO 19142:2010 - Geographic information - Web Feature Service. ISO"
+    doc-id: ISO 19142
+    uri: https://www.iso.org/standard/42136.html
+  - title: "Web Feature Service 2.0. OGC"
+    doc-id: WFS 2.0
+    uri: http://docs.opengeospatial.org/is/09-025r2/09-025r2.html
+  - title: "Spatial Data on the Web Best Practices, W3C Working Group Note 28 September 2017. W3C/OGC"
+    doc-id: SDWBP
+    uri: https://www.w3.org/TR/sdw-bp/
+  - title: "Data on the Web Best Practices, W3C Recommendation 31 January 2017. W3C"
+    doc-id: WBP
+    uri: https://www.w3.org/TR/dwbp/
+  - title: "Data Catalog Vocabulary, W3C Recommendation 16 January 2014. W3C"
+    doc-id: DCAT
+    uri: https://www.w3.org/TR/vocab-dcat/

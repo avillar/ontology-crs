@@ -1,0 +1,14 @@
+{
+  "name": "Revision History",
+  "abstract": "Revision history of the CRS ontology specification.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-07T00:00:00Z",
+  "itemClass": "clause",
+  "version": "0.1",
+  "normative": false,
+  "tags": [
+    "geosrs",
+    "standard",
+    "clause"
+  ]
+}

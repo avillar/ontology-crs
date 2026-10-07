@@ -15,6 +15,11 @@ terms:
   - term: coordinate reference system
     definition: >
       A coordinate system that is related to an object by a datum.
+  - term: example term
+    definition: term used for exemplary purposes
+    sources:
+      - title: ISO 19101-1
+    note: An example note.
 
 abbreviated-terms:
   CRS: coordinate reference system
