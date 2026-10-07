@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.planet - SRS Ontology - Planet module
-Generated 2026-10-07T16:45:22.530896+00:00
+Generated 2026-10-07T16:52:00.855001+00:00
 === Files ===
 Using examples/planet.ttl from examples
 Output Turtle example_1_1.ttl created

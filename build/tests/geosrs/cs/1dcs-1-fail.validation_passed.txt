@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module
-Generated 2026-10-07T16:45:22.370143+00:00
+Generated 2026-10-07T16:52:00.691671+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -25,17 +25,17 @@ Validation result for _sources/cs/rules.shacl:
   	Message: A 1D coordinate system should have exactly one axis
   
 Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
 
 === End SHACL ===
