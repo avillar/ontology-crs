@@ -1,3 +1,26 @@
+> [!NOTE]
+> **This fork differs from [opengeospatial/ontology-crs](https://github.com/opengeospatial/ontology-crs).**
+> Its purpose is to showcase [bblocks-specgen](https://github.com/ogcincubator/bblocks-specgen), which
+> generates the standards document from the Building Blocks instead of from the Metanorma sources.
+>
+> - **Standards document:** `standards.yaml` and the `SpecgenBuildPlugin` entry in `bblocks-config.yaml`
+>   build the document into `build/standards/crs-ontology/` (listed under `standards` in
+>   `build/register.json`). Each module block has a `requirements.yaml`, and the prose, terms,
+>   references, instances and annexes are blocks under `_sources/requirements/`. The text of the
+>   Metanorma template placeholders is kept on purpose, to compare both outputs. `base-uri` is still
+>   the `opengeospatial.github.io/ontology-crs` namespace, whatever the publishing location.
+> - **CI:** only the default Building Blocks workflow (`.github/workflows/process-bblocks.yml`) runs.
+>   The upstream "Ontology Documentation CI" (CSV → TTL, pylode docs, Metanorma, GitHub Pages
+>   deployment) is **disabled**: it lives in `.github/workflows-disabled/` and no longer produces the
+>   `spec/` HTML/PDF, the pylode and class-tree pages or `context/`.
+> - **Ontology files are committed.** `_sources/*/ontology.ttl` used to be regenerated from `csv/` on
+>   every CI run (never committed back); they are now committed, so edits to `csv/` have no effect
+>   until you regenerate them. The `srs` block's file is core `index.ttl` merged with `srs.ttl`; the
+>   rest are the module `.ttl` files (`application.ttl` for `app`). To regenerate, run
+>   `scripts/srsbuild.py` as in the disabled workflow and copy the results.
+> - **Upstream changes:** when merging from upstream, keep the points above; in particular don't
+>   restore the old workflow without re-adding the TTL generation step to the new one.
+
 # CRS Ontology  
       
 ## Introduction      
